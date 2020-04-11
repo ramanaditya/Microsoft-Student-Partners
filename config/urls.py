@@ -7,7 +7,8 @@ from django.views import defaults as default_views
 
 
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", include("microsoft_student_partners.msp.urls", namespace="msp")),
+    # path("", TemplateView.as_view(template_name="index.html"), name="home"),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),

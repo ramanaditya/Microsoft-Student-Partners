@@ -1,0 +1,43 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>msp</title>
+      <!-- Favicon -->
+
+      <!-- Bootstrap CSS -->
+      <link href="{% static 'css/bootstrap.min.css' %}{% now '?U' %}" rel="stylesheet">
+      <!-- Animate CSS -->
+      <link href="{% static 'vendors/animate/animate.css' %}{% now '?U' %}" rel="stylesheet">
+      <!-- Icon CSS-->
+      <link rel="stylesheet" href="{% static 'vendors/font-awesome/css/font-awesome.min.css' %}{% now '?U' %}">
+      <!-- Owlcarousel CSS-->
+      <link rel="stylesheet" type="text/css" href="{% static 'vendors/owl_carousel/owl.carousel.css' %}{% now '?U' %}" media="all">
+      <!--Template Styles CSS-->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}{% now '?U' %}" media="all" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+   </head>
+   <body>
+      {% block content %}
+      {% endblock content %}
+
+      {% block javascript %}
+      <!-- jQuery JS -->
+      <script src="{% static 'js/jquery-1.12.0.min.js' %}{% now '?U' %}"></script>
+      <!-- Bootstrap JS -->
+      <script src="{% static 'js/bootstrap.min.js' %}{% now '?U' %}"></script>
+       <script src="{% static 'vendors/popup/lightbox.min.js' %}{% now '?U' %}"></script>
+      <!-- Animate JS -->
+      <script src="{% static 'vendors/animate/wow.min.js' %}{% now '?U' %}"></script>
+      <!-- Owlcarousel JS -->
+      <script src="{% static 'vendors/owl_carousel/owl.carousel.min.js' %}{% now '?U' %}"></script>
+      <!-- Stellar JS -->
+
+      <!-- Theme JS -->
+      <script src="{% static 'js/theme.min.js' %}{% now '?U' %}"></script>
+      {% endblock javascript %}
+   </body>
+</html>
