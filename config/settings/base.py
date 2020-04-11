@@ -3,7 +3,7 @@ Base settings to build other settings files upon.
 """
 
 import environ
-
+import os
 ROOT_DIR = (
     environ.Path(__file__) - 3
 )  # (microsoft_student_partners/config/settings/base.py - 3 = microsoft_student_partners/)
@@ -42,10 +42,19 @@ LOCALE_PATHS = [ROOT_DIR.path("locale")]
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
+# DATABASES = {
+#     "default": env.db("DATABASE_URL", default="postgres:///microsoft_student_partners")
+# }
+# DATABASES["default"]["ATOMIC_REQUESTS"] = True
+
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres:///microsoft_student_partners")
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(ROOT_DIR, "db.sqlite3"),
+    }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
+
 
 # URLS
 # ------------------------------------------------------------------------------
@@ -254,30 +263,31 @@ LOGGING = {
     },
     "root": {"level": "INFO", "handlers": ["console"]},
 }
+"""Celery not needed now"""
+# # Celery
+# # ------------------------------------------------------------------------------
+# if USE_TZ:
+#     # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-timezone
+#     CELERY_TIMEZONE = TIME_ZONE
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-broker_url
+# CELERY_BROKER_URL = env("CELERY_BROKER_URL")
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_backend
+# CELERY_RESULT_BACKEND = CELERY_BROKER_URL
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-accept_content
+# CELERY_ACCEPT_CONTENT = ["json"]
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-task_serializer
+# CELERY_TASK_SERIALIZER = "json"
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_serializer
+# CELERY_RESULT_SERIALIZER = "json"
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-time-limit
+# # TODO: set to whatever value is adequate in your circumstances
+# CELERY_TASK_TIME_LIMIT = 5 * 60
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-soft-time-limit
+# # TODO: set to whatever value is adequate in your circumstances
+# CELERY_TASK_SOFT_TIME_LIMIT = 60
+# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#beat-scheduler
+# CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 
-# Celery
-# ------------------------------------------------------------------------------
-if USE_TZ:
-    # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-timezone
-    CELERY_TIMEZONE = TIME_ZONE
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-broker_url
-CELERY_BROKER_URL = env("CELERY_BROKER_URL")
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_backend
-CELERY_RESULT_BACKEND = CELERY_BROKER_URL
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-accept_content
-CELERY_ACCEPT_CONTENT = ["json"]
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-task_serializer
-CELERY_TASK_SERIALIZER = "json"
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_serializer
-CELERY_RESULT_SERIALIZER = "json"
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-time-limit
-# TODO: set to whatever value is adequate in your circumstances
-CELERY_TASK_TIME_LIMIT = 5 * 60
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-soft-time-limit
-# TODO: set to whatever value is adequate in your circumstances
-CELERY_TASK_SOFT_TIME_LIMIT = 60
-# http://docs.celeryproject.org/en/latest/userguide/configuration.html#beat-scheduler
-CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 # django-allauth
 # ------------------------------------------------------------------------------
 ACCOUNT_ALLOW_REGISTRATION = env.bool("DJANGO_ACCOUNT_ALLOW_REGISTRATION", True)
