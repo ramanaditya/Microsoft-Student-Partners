@@ -89,6 +89,7 @@ LOCAL_APPS = [
     "microsoft_student_partners.users.apps.UsersConfig",
     # Your stuff: custom apps go here
     "microsoft_student_partners.msp.apps.MspConfig",
+    "microsoft_student_partners.hackcovid19.apps.Hackcovid19Config",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
