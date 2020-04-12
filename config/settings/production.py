@@ -7,7 +7,7 @@ from sentry_sdk.integrations.logging import LoggingIntegration
 
 from .base import *  # noqa
 from .base import env
-
+import os
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
@@ -157,7 +157,7 @@ LOGGING = {
 # Sentry
 # ------------------------------------------------------------------------------
 SENTRY_DSN = os.environ.get("SENTRY_DSN")
-SENTRY_LOG_LEVEL = int(os.environ.get("DJANGO_SENTRY_LOG_LEVEL"), logging.INFO)
+SENTRY_LOG_LEVEL = int(os.environ.get("DJANGO_SENTRY_LOG_LEVEL"))  # logging.INFO
 
 sentry_logging = LoggingIntegration(
     level=SENTRY_LOG_LEVEL,  # Capture info and above as breadcrumbs
