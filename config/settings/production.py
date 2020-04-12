@@ -1,6 +1,6 @@
 import logging
 
-# import sentry_sdk
+import sentry_sdk
 
 from sentry_sdk.integrations.django import DjangoIntegration
 from sentry_sdk.integrations.logging import LoggingIntegration
@@ -15,16 +15,23 @@ from .base import env
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["http://mspglobal.azurewebsites.net/"])
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["mspglobal.azurewebsites.net"])
 
 # DATABASES
 # ------------------------------------------------------------------------------
-# DATABASES["default"] = env.db("DATABASE_URL")  # noqa F405
+# DATABASES["default"] = os.getenv.db("DATABASE_URL")  # noqa F405
 # DATABASES["default"]["ATOMIC_REQUESTS"] = True  # noqa F405
 # DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # noqa F405
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(ROOT_DIR, "db.sqlite3"),
+    }
+}
+DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
-# CACHES
-# ------------------------------------------------------------------------------
+# # CACHES
+# # ------------------------------------------------------------------------------
 # CACHES = {
 #     "default": {
 #         "BACKEND": "django_redis.cache.RedisCache",
@@ -88,7 +95,7 @@ TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # type: ignore[index] # noqa F405
 # DEFAULT_FROM_EMAIL = env(
 #     "DJANGO_DEFAULT_FROM_EMAIL", default="Microsoft Student Partners <noreply@example.com>"
 # )
-# # https://docs.djangoproject.com/en/dev/ref/settings/#server-email
+# https://docs.djangoproject.com/en/dev/ref/settings/#server-email
 # SERVER_EMAIL = env("DJANGO_SERVER_EMAIL", default=DEFAULT_FROM_EMAIL)
 # # https://docs.djangoproject.com/en/dev/ref/settings/#email-subject-prefix
 # EMAIL_SUBJECT_PREFIX = env(
@@ -98,7 +105,7 @@ TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # type: ignore[index] # noqa F405
 # ADMIN
 # ------------------------------------------------------------------------------
 # Django Admin URL regex.
-# ADMIN_URL = env("DJANGO_ADMIN_URL")
+ADMIN_URL = env("DJANGO_ADMIN_URL")
 
 # Anymail (Mailgun)
 # ------------------------------------------------------------------------------
@@ -152,19 +159,19 @@ LOGGING = {
     },
 }
 
-# # Sentry
-# # ------------------------------------------------------------------------------
-# # SENTRY_DSN = env("SENTRY_DSN")
-# SENTRY_LOG_LEVEL = env.int("DJANGO_SENTRY_LOG_LEVEL", logging.INFO)
-#
-# sentry_logging = LoggingIntegration(
-#     level=SENTRY_LOG_LEVEL,  # Capture info and above as breadcrumbs
-#     event_level=logging.ERROR,  # Send errors as events
-# )
-# sentry_sdk.init(
-#     dsn=SENTRY_DSN,
-#     integrations=[sentry_logging, DjangoIntegration(), CeleryIntegration()],
-# )
+# Sentry
+# ------------------------------------------------------------------------------
+SENTRY_DSN = env("SENTRY_DSN")
+SENTRY_LOG_LEVEL = env.int("DJANGO_SENTRY_LOG_LEVEL", logging.INFO)
+
+sentry_logging = LoggingIntegration(
+    level=SENTRY_LOG_LEVEL,  # Capture info and above as breadcrumbs
+    event_level=logging.ERROR,  # Send errors as events
+)
+sentry_sdk.init(
+    dsn=SENTRY_DSN,
+    integrations=[sentry_logging, DjangoIntegration(), CeleryIntegration()],
+)
 
 # Your stuff...
 # ------------------------------------------------------------------------------
