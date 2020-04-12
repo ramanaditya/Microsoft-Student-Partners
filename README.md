@@ -7,7 +7,7 @@ This is the unofficial website for the Microsoft Student Partners
 [![GitHub license](https://img.shields.io/github/license/ramanaditya/Microsoft-Student-Partners.svg?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/ramanaditya/Microsoft-Student-Partners.svg?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/ramanaditya/Microsoft-Student-Partners.svg?logo=github&color=teal)](https://github.com/ramanaditya/Microsoft-Student-Partners/network/members) 
-[![GitHub top language](https://img.shields.io/github/languages/top/Podnet/Fight-Covid19?logo=html5&color=red)](https://github.com/ramanaditya/Microsoft-Student-Partners)
+[![GitHub top language](https://img.shields.io/github/languages/top/ramanaditya/Microsoft-Student-Partners.svg?logo=html5&color=red)](https://github.com/ramanaditya/Microsoft-Student-Partners)
 
 :License: MIT
 
