@@ -3,7 +3,6 @@ Base settings to build other settings files upon.
 """
 
 import environ
-import os
 ROOT_DIR = (
     environ.Path(__file__) - 3
 )  # (microsoft_student_partners/config/settings/base.py - 3 = microsoft_student_partners/)

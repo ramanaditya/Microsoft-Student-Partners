@@ -9,7 +9,7 @@ from sentry_sdk.integrations.celery import CeleryIntegration
 
 from .base import *  # noqa
 from .base import env
-
+import os
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
