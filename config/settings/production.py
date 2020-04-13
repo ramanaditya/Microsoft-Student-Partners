@@ -8,12 +8,15 @@ from sentry_sdk.integrations.logging import LoggingIntegration
 from .base import *  # noqa
 from .base import env
 import os
+
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["mspglobal.azurewebsites.net"] #os.environ.get.list("DJANGO_ALLOWED_HOSTS", default=["example.com"])
+ALLOWED_HOSTS = [
+    "mspglobal.azurewebsites.net"
+]  # os.environ.get.list("DJANGO_ALLOWED_HOSTS", default=["example.com"])
 
 # DATABASES
 # ------------------------------------------------------------------------------
@@ -59,7 +62,9 @@ CSRF_COOKIE_SECURE = True
 # TODO: set this to 60 seconds first and then to 518400 once you prove the former works
 SECURE_HSTS_SECONDS = 60
 # https://docs.djangoproject.com/en/dev/ref/settings/#secure-hsts-include-subdomains
-SECURE_HSTS_INCLUDE_SUBDOMAINS = bool(os.environ.get("DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS"))
+SECURE_HSTS_INCLUDE_SUBDOMAINS = bool(
+    os.environ.get("DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS")
+)
 # https://docs.djangoproject.com/en/dev/ref/settings/#secure-hsts-preload
 SECURE_HSTS_PRELOAD = bool(os.environ.get("DJANGO_SECURE_HSTS_PRELOAD"))
 # https://docs.djangoproject.com/en/dev/ref/middleware/#x-content-type-options-nosniff
@@ -157,7 +162,7 @@ LOGGING = {
 # Sentry
 # ------------------------------------------------------------------------------
 SENTRY_DSN = os.environ.get("SENTRY_DSN")
-SENTRY_LOG_LEVEL = int(os.environ.get("DJANGO_SENTRY_LOG_LEVEL"))  # logging.INFO
+SENTRY_LOG_LEVEL = os.environ.get("DJANGO_SENTRY_LOG_LEVEL")  # logging.INFO
 
 sentry_logging = LoggingIntegration(
     level=SENTRY_LOG_LEVEL,  # Capture info and above as breadcrumbs
