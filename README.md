@@ -1,3 +1,4 @@
+![](microsoft_student_partners/static//microsoft/Blog Header Graphic/2019_MSP_IO_Pattern_Blog_Black_850x376.png)
 # Microsoft Student Partners
 
 This is the unofficial website for the Microsoft Student Partners
