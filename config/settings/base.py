@@ -4,6 +4,7 @@ Base settings to build other settings files upon.
 
 import environ
 import os
+
 ROOT_DIR = (
     environ.Path(__file__) - 3
 )  # (microsoft_student_partners/config/settings/base.py - 3 = microsoft_student_partners/)
@@ -11,7 +12,7 @@ APPS_DIR = ROOT_DIR.path("microsoft_student_partners")
 
 env = environ.Env()
 
-READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
+READ_DOT_ENV_FILE = bool(os.environ.get("DJANGO_READ_DOT_ENV_FILE"))  # default : False
 if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
     env.read_env(str(ROOT_DIR.path(".env")))
@@ -19,7 +20,7 @@ if READ_DOT_ENV_FILE:
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
-DEBUG = env.bool("DJANGO_DEBUG", False)
+DEBUG = bool(os.environ.get("DJANGO_DEBUG"))  # default: False
 # Local time zone. Choices are
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # though not all of them may be available with every OS.
@@ -46,7 +47,6 @@ LOCALE_PATHS = [ROOT_DIR.path("locale")]
 #     "default": env.db("DATABASE_URL", default="postgres:///microsoft_student_partners")
 # }
 # DATABASES["default"]["ATOMIC_REQUESTS"] = True
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -54,7 +54,6 @@ DATABASES = {
     }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
-
 
 # URLS
 # ------------------------------------------------------------------------------
@@ -82,13 +81,13 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "rest_framework",
-    "django_celery_beat",
 ]
 
 LOCAL_APPS = [
     "microsoft_student_partners.users.apps.UsersConfig",
     # Your stuff: custom apps go here
     "microsoft_student_partners.msp.apps.MspConfig",
+    "microsoft_student_partners.hackcovid19.apps.Hackcovid19Config",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -226,18 +225,18 @@ X_FRAME_OPTIONS = "DENY"
 # EMAIL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
-EMAIL_BACKEND = env(
-    "DJANGO_EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend"
-)
-# https://docs.djangoproject.com/en/2.2/ref/settings/#email-timeout
-EMAIL_TIMEOUT = 5
+# EMAIL_BACKEND = env(
+#     "DJANGO_EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend"
+# )
+# # https://docs.djangoproject.com/en/2.2/ref/settings/#email-timeout
+# EMAIL_TIMEOUT = 5
 
 # ADMIN
 # ------------------------------------------------------------------------------
 # Django Admin URL.
 ADMIN_URL = "admin/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
-ADMINS = [("""Aditya Raman""", "adityaraman@studentpartner.com")]
+ADMINS = [("""Aditya Raman""", "adityaraman96@gmail.com")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
 MANAGERS = ADMINS
 
@@ -264,34 +263,11 @@ LOGGING = {
     },
     "root": {"level": "INFO", "handlers": ["console"]},
 }
-"""Celery not needed now"""
-# # Celery
-# # ------------------------------------------------------------------------------
-# if USE_TZ:
-#     # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-timezone
-#     CELERY_TIMEZONE = TIME_ZONE
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-broker_url
-# CELERY_BROKER_URL = env("CELERY_BROKER_URL")
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_backend
-# CELERY_RESULT_BACKEND = CELERY_BROKER_URL
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-accept_content
-# CELERY_ACCEPT_CONTENT = ["json"]
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-task_serializer
-# CELERY_TASK_SERIALIZER = "json"
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_serializer
-# CELERY_RESULT_SERIALIZER = "json"
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-time-limit
-# # TODO: set to whatever value is adequate in your circumstances
-# CELERY_TASK_TIME_LIMIT = 5 * 60
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-soft-time-limit
-# # TODO: set to whatever value is adequate in your circumstances
-# CELERY_TASK_SOFT_TIME_LIMIT = 60
-# # http://docs.celeryproject.org/en/latest/userguide/configuration.html#beat-scheduler
-# CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+
 
 # django-allauth
 # ------------------------------------------------------------------------------
-ACCOUNT_ALLOW_REGISTRATION = env.bool("DJANGO_ACCOUNT_ALLOW_REGISTRATION", True)
+ACCOUNT_ALLOW_REGISTRATION = bool(os.environ.get("DJANGO_ACCOUNT_ALLOW_REGISTRATION"))  #default : True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_AUTHENTICATION_METHOD = "username"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html

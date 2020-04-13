@@ -11,7 +11,7 @@ theme.
 
 
 This files contents are outlined below.
-  
+
 
 0. General Style
 1. Buttons
@@ -33,11 +33,11 @@ This files contents are outlined below.
 19. blog-details-area start
 20.sidebar-style-here
 21.media query in css-Responsive
-22.(mxn-width: 1024px)  media query 
-23.(min-width: 768px) media query 
+22.(mxn-width: 1024px)  media query
+23.(min-width: 768px) media query
 24.(min-width: 1023px) and (max-width: 1100px)  media query
-25.(max-width: 768px) media query 
-26.(max-width: 480px) media query 
+25.(max-width: 768px) media query
+26.(max-width: 480px) media query
 
 
 
@@ -74,7 +74,7 @@ padding: 18px 50px;
     position: absolute;
     z-index: -1;
         background:#504cf5 !important;
-  
+
     top: 0;
     bottom: 0;
     left: 0;
@@ -96,7 +96,7 @@ padding: 18px 50px;
    background: #504cf5 !important;
     color: #fff !important;
   }
-   
+
 .btn-primary:before {
     content: "";
     position: absolute;
@@ -144,7 +144,7 @@ a {
 .title h2  {
     font-size: 30px;
     color: #99a9bb;
- 
+
     font-weight: 550;
     text-transform: capitalize;
 }
@@ -254,7 +254,7 @@ tbody a{
 dd, dt {
     line-height: 2.428571;
     }
-   
+
 /*--------------------------------------------------*/
 
 
@@ -266,13 +266,13 @@ dd, dt {
   border-radius: 0;
   border: 0;
   margin: 0;
-  
-  
+
+
       padding: 70px 0px;
   width: 100%;
   z-index: 9999;
   top: 0;
- 
+
 }
 .header_aera .searchForm {
   height: 0;
@@ -322,7 +322,7 @@ dd, dt {
   max-width: 100%;
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
-  
+
     text-transform: uppercase;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -439,13 +439,15 @@ dd, dt {
         line-height: 50px;
     text-transform: capitalize;
 }
-  
+
 .bg-banner-img{
- 
+
     background: rgba(255,255,255,0);
-    background-image: url(../images/banner-img.jpg);
+    background-image: url("../microsoft/Blog\ Header\ Graphic/2019_MSP_IO_Pattern_Blog_Black_850x376.png");
+    max-width: 100%;
+    max-height: 100%;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    /*background-position: center top;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -471,10 +473,10 @@ dd, dt {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-   
-   
 
-    
+
+
+
 }
 
 .ovrllay{
@@ -485,7 +487,7 @@ dd, dt {
     width: 100%;
     height: 100%;
     right: 0;
- background-image: linear-gradient(to right top ,#2725b9d4,#3a39dcd1,#e748bec2 ,#e748bec9 ,#e748beb5)!important;
+ /*background-image: linear-gradient(to right top ,#2725b9d4,#3a39dcd1,#e748bec2 ,#e748bec9 ,#e748beb5)!important;*/
 
 }
 img{
@@ -540,7 +542,7 @@ img{
   font-weight: 700;
     font-size: 24px;
     text-align: left;
-    margin: 10px 0; 
+    margin: 10px 0;
     color: #364167;
 }
 .bottom-s{
@@ -772,7 +774,7 @@ iframe {
   margin-top:100px;
 }
 .mb_150{
-  margin-bottom: 100px; 
+  margin-bottom: 100px;
 }
 .font_30{
   font-size: 30px;
@@ -793,7 +795,7 @@ iframe {
 }
 
 .about_h{     font-size: 25px;     color: #90a0b4;     font-weight: 540;
-margin: 30px 0px; } 
+margin: 30px 0px; }
 
 .about_s2 {
   text-align: left;
@@ -805,13 +807,13 @@ margin: 30px 0px; }
 }
 
 .about_bottom_h{font-size: 20px;     line-height:
-35px;color: #90a0b4; padding-right: 15px; 
+35px;color: #90a0b4; padding-right: 15px;
     text-transform: capitalize;
 
 }
 .mt-50{
   margin-top: 50px;
-} 
+}
  .my_0{margin:0px !important}
 .video-img{
   text-align: center;
@@ -840,7 +842,7 @@ margin: 30px 0px; }
  /*End servise area */
 
 /*--------------------------------------------------*/
-/*----------------------------------   
+/*----------------------------------
 
 
  1.pricingTable_area
@@ -915,7 +917,7 @@ margin: 30px 0px; }
             border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-   
+
 
 
 .pricingTable .pricing-content:before{
@@ -1092,37 +1094,37 @@ label{
     text-transform: capitalize;
 }
 .owl-prev {
-   
+
     position: absolute;
     bottom: 50%;
     color: transparent !important;
 }
 .testimonial_area:hover .owl-prev{
   display:block !important;
-} 
+}
 .testimonial_area:hover .owl-next{
   display:block !important;
-} 
+}
 
 .owl-next{
-   
+
     position: absolute;
     right: 0;
     bottom: 50%;
     color: transparent !important;
 }
-.owl-prev::before { 
+.owl-prev::before {
     content: url(../images/left-r.png);
 
 }
-.owl-next::before { 
+.owl-next::before {
     content: url(../images/right-r.png);
 
 }
 .owl-dots{
   display: none !important;
 }
-  
+
 .title h1{
     font-size: 35px;
     padding-top: 90px;
@@ -1169,13 +1171,13 @@ label{
   margin-bottom: 30px;
   border-radius: 30px;
   box-shadow: 0px 17px 51px -10px #cccccc9e;
-  
+
 }
 .our_team_area .team_row .team_membar img {
   max-width: 100%;
 }
 .our_team_area .team_row .team_membar .team_content {
- 
+
     padding-top: 28px;
     padding-bottom: 42px;
   position: absolute;
@@ -1194,7 +1196,7 @@ label{
 }
 .our_team_area .team_row .team_membar .team_content ul li {
   list-style: none;
- 
+
   display: inline-block;
 }
 .our_team_area .team_row .team_membar .team_content ul li:first-child {
@@ -1278,7 +1280,7 @@ text-align: left;
   color: #222222;
 }
 .testimonial_area .testimonial_carosel .item .media .media-body h6 {
-  
+
   color: #555555;
   padding-top: 5px;
 }
@@ -1352,18 +1354,18 @@ text-align: left;
     background-image: linear-gradient(to right bottom,#f1f9fc,#f1f9fc,#f1f9fc,#f1f9fc,#f1f9fc)!important;
 }
 .email_color_site{
-  color:#999 !important; 
+  color:#999 !important;
 }
 
 .our_partners_area .book_now_aera {
-  
+
   padding: 50px 0;
 }
 .our_partners_area .book_now_aera .book_now .booking_text {
   padding-top: 8px;
 }
 .our_partners_area .book_now_aera .book_now .booking_text h4 {
- 
+
   color: #364167;
     line-height: 30px;
     font-size: 20px;
@@ -1457,7 +1459,7 @@ text-align: left;
   text-decoration: none;
   color: black;
 }
-  
+
 
 .clip-polygon  {
    background-color: #fff !important;
@@ -1515,7 +1517,7 @@ a {
 text-align: right;
 }
 .logo-biss{
-  
+
     color: #fff !important;
     font-size: 30px;
     font-weight: 700;
@@ -1524,7 +1526,7 @@ text-align: right;
 
 
 .what_we_area {
-    
+
     background: #f2e9df !important;
     background-image: linear-gradient(to right bottom, #f2e9df, #c6dae1, #c6dae1, #f2e9df, #f2e9df) !important;
 }
@@ -1544,7 +1546,7 @@ section{
     -webkit-animation-delay: 150ms;
     animation-delay: 150ms;
     visibility: visible;
-    
+
 }
 .main-h2{
     font-size: 24px;
@@ -1588,9 +1590,9 @@ visibility: visible;
 
 
 .professional_builder .builder_all .builder i {
-   
+
     color: #9eccfd !important;
-  
+
 }
 
 .pb-90{
@@ -1636,7 +1638,7 @@ padding-bottom: 90px;
     font-size: 20px;
     color: #fff;
     line-height: 30px;
-   
+
 }
 
 .footer-menu li{
@@ -1682,7 +1684,7 @@ padding-bottom: 90px;
  .social {
      -webkit-transform: scale(0.8);
      /* Browser Variations: */
-     
+
      -moz-transform: scale(0.8);
      -o-transform: scale(0.8);
      -webkit-transition-duration: 0.5s;
@@ -1707,7 +1709,7 @@ iframe{
   }
 @media (max-width: 575.98px) {
 
-  
+
   #contatti .maps iframe{
     width: 100%;
     height: 550px;
@@ -1717,7 +1719,7 @@ iframe{
 
 @media (min-width: 576px) {
 
- 
+
 
    #contatti .maps iframe{
      width: 100%;
@@ -1727,7 +1729,7 @@ iframe{
 
 @media (min-width: 768px) {
 
- 
+
 
   #contatti .maps iframe{
     width: 100%;
@@ -1797,7 +1799,7 @@ iframe{
   padding-left:20px;
   margin-bottom:25px;
       border: 1px solid #98a4b2;
-   color:#98a4b2; 
+   color:#98a4b2;
     border-radius: 5px;
 }
 .sewl-form-inputs textarea:focus,.sewl-form-inputs input:focus{
@@ -1851,7 +1853,7 @@ iframe{
 /*
     Multicoloured Hover Variations
 */
- 
+
  #social-fb:hover {
      color: #fff;
  }
@@ -1951,7 +1953,7 @@ iframe{
 .blog-content h3 a{
   font-size:20px;
   text-transform:capitalize;
-  color:#555!important; 
+  color:#555!important;
 }
 .blog-content p{
   margin-bottom:20px;
@@ -2445,13 +2447,13 @@ h3.blog-title {
 
 }
 }
-  
+
   /*------------------------------------
 22.Responsive
 (max-width: 767px) media query
 ------------------------------------*/
 @media (max-width: 767px) {
-  
+
 section {
     padding: 30px 0px !important;
 }
@@ -2486,7 +2488,7 @@ ul.location{
       font-size: 12px !important;
     }
     .video-img{
-      padding-left:0px !important; 
+      padding-left:0px !important;
     }
 
     p.about_bottom_h.mt-50 {
@@ -2580,13 +2582,13 @@ ol {
     background-color: transparent;
   }
 
-  
+
 
   .slider_inner.camera_wrap {
     height: 500px !important;
   }
 
-  
+
 
   .our_team_area .team_row .team_membar {
     max-width: 360px;
@@ -2627,7 +2629,7 @@ ol {
     line-height: 23px;
     color: #fff;
     padding-left:30px;
-  
+
 }
 .about-right h1 {
     font-size:30px;
@@ -2697,12 +2699,12 @@ img.posi-r-img{
   .button-banner {
     padding: 18px 22px;
   }
-  
+
 }
 
 @media (min-width: 767px) {
  .navbar-brand {
-  
+
     padding: 25px 15px !important;
 }
 
