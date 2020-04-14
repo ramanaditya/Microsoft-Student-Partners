@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="642" viewBox="0 0 1920 642">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="section_bg" data-name="section bg" width="1920" height="642" transform="translate(0 1080)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="bg_about" transform="translate(0 -1080)">
+    <rect id="section_bg-2" data-name="section bg" width="1920" height="642" transform="translate(0 1080)"/>
+    <g id="Mask_Group_4" data-name="Mask Group 4" opacity="0.24" clip-path="url(#clip-path)">
+      <path id="wave_1_" data-name="wave (1)" d="M1920,285.775l-80-7.067c-80-7.6-290.933,29.249-450.933-13.817-160-42.267-320-114.267-480-149.333q-240-53.4-480,0C269.067,150.624,160,172.442,80,207.508l-80,35.6V583.521H1920Z" transform="translate(0 1137.55)" fill="#fff" opacity="0.66"/>
+      <path id="wave_1_2" data-name="wave (1)" d="M.281,166.675l80,7.067c80,7.6,240,20.933,400,64,160,42.267,320,114.267,480,149.333q240,53.4,480,0c160-35.067,320-107.067,400-142.133l80-35.6L1920-62.168H0Z" transform="translate(0 1142.55)" fill="#fff" opacity="0.66"/>
+    </g>
+  </g>
+</svg>
