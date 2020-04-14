@@ -5,10 +5,9 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
-
 urlpatterns = [
-    path("", include("microsoft_student_partners.msp.urls", namespace="msp")),
-    # path("", TemplateView.as_view(template_name="index.html"), name="home"),
+    path("msp", include("microsoft_student_partners.msp.urls", namespace="msp")),
+    path("", TemplateView.as_view(template_name="index.html"), name="home"),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),
@@ -18,6 +17,10 @@ urlpatterns = [
     path("users/", include("microsoft_student_partners.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path(
+        "hackcovid19",
+        include("microsoft_student_partners.hackcovid19.urls", namespace="hackcovid19"),
+    ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

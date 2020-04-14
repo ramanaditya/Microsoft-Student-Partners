@@ -153,3 +153,5 @@ You must set the DSN url in production.
 
 
 [![with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/) [![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/)
+
+![](microsoft_student_partners/static/microsoft/Visual%20ID%20and%20Logo/Student%20Partner%20Visual%20ID/Blue_Black/CMYK/1Line/0419_MS_MSP_logo_Lockups_CMYK_MSP-1line-blue.png)
