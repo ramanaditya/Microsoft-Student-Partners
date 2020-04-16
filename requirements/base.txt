@@ -15,6 +15,15 @@ django-crispy-forms==1.8.1  # https://github.com/django-crispy-forms/django-cris
 django-redis==4.11.0  # https://github.com/niwinz/django-redis
 django-debug-toolbar==2.2
 sqlparse==0.3.1
+django_extensions==2.2.8
 
 # Django REST Framework
 djangorestframework==3.11.0  # https://github.com/encode/django-rest-framework
+
+# Other
+six==1.14.0
+requests==2.23.0
+certifi==2020.4.5.1
+chardet==3.0.4
+idna==2.9
+urllib3!==1.25.8
