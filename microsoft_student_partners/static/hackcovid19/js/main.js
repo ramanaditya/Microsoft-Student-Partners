@@ -92,7 +92,7 @@ autoplaySpeed: 800,
 });
 
 // count_dwon
-$('#clock').countdown('2019/12/21', function(event) {
+$('#clock').countdown('2020/05/31', function(event) {
   $(this).html(event.strftime('<div class="countdown_time"><div class="single_countdown"><h3>%D</h3><span>days</span></div><div class="single_countdown"><h3>%H</h3><span>Hours</span></div><div class="single_countdown"><h3>%M</h3><span>Minutes</span></div><div class="single_countdown"><h3>%S</h3><span>Seconds</span></div></div>'));
 });
 
@@ -122,11 +122,11 @@ $('#clock').countdown('2019/12/21', function(event) {
     $(this).addClass('active');
     event.preventDefault();
 	});
-  
+
   // wow js
   new WOW().init();
 
-  // counter 
+  // counter
   $('.counter').counterUp({
     delay: 10,
     time: 10000
@@ -277,7 +277,7 @@ dots:false,
 });
 
 });
-//------- Mailchimp js --------//  
+//------- Mailchimp js --------//
 function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
@@ -301,4 +301,4 @@ mailChimp();
             $("#search_input").focus();
         });
 
-})(jQuery);	
+})(jQuery);

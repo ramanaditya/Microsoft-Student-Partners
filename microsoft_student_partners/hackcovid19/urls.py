@@ -6,4 +6,24 @@ from microsoft_student_partners.hackcovid19.views import Hackcovid19
 app_name = "hackcovid19"
 urlpatterns = [
     path("", view=Hackcovid19.as_view(), name="home"),
+    path(
+        "contact/",
+        TemplateView.as_view(template_name="hackcovid19/contact.html"),
+        name="contact",
+    ),
+    path(
+        "schedule/",
+        TemplateView.as_view(template_name="hackcovid19/schedule.html"),
+        name="schedule",
+    ),
+    path(
+        "speakers/",
+        TemplateView.as_view(template_name="hackcovid19/speakers.html"),
+        name="speakers",
+    ),
+    path(
+        "elements/",
+        TemplateView.as_view(template_name="hackcovid19/elements.html"),
+        name="elements",
+    ),
 ]
