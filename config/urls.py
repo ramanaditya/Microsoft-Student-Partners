@@ -18,7 +18,7 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
     path(
-        "hackcovid19",
+        "hackcovid19/",
         include("microsoft_student_partners.hackcovid19.urls", namespace="hackcovid19"),
     ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
