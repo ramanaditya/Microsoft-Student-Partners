@@ -14,5 +14,20 @@
     "twitter": "https://twitter.com/_adityaraman",
     "instagram": "",
     "position": "Core Organizer"
+  }, 
+  "Aashrut Vaghani": {
+    "name": "Aashrut Vaghani",
+    "image_url": "https://avatars1.githubusercontent.com/u/49032425?s=400&u=dd2fbfe25654a06c3a711cb65a9d14a47c0d5195&v=4",
+    "linkedin": "https://www.linkedin.com/in/aashrut-vaghani-06bab0184",
+    "github": "https://github.com/Aashrut",
+    "twitter": "",
+    "instagram": "https://www.instagram.com/aashrut_vaghani",
+    "position": "Tech Lead"
+  },
+  "Ankita Sharma": {
+    "name": "Ankita Sharma",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C5103AQHww880DWfFrw/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=hum1guvp8NNq2ckP5PzcjY6yRkbqWg4bEx1bZ22Tkk0",
+    "linkedin": "https://www.linkedin.com/in/ankita-sharma-83ab64146/",
+    "position": "Design Lead"
   }
-}
+} 
