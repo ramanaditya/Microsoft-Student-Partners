@@ -15,6 +15,14 @@
     "instagram": "",
     "position": "Core Organizer"
   },
+  "Syed Farhan Ahmad": {
+    "name": "Syed Farhan Ahmad",
+    "image_url": "https://user-images.githubusercontent.com/42010556/79631547-a3f42800-8177-11ea-890e-c78f2289db6f.jpeg",
+    "linkedin": "https://www.linkedin.com/in/syedfarhanahmad/",
+    "github": "https://github.com/born-2learn",
+    "twitter": "https://twitter.com/syedfarhanrvce",
+    "position": "Tech Lead"
+  },
   "Aashrut Vaghani": {
     "name": "Aashrut Vaghani",
     "image_url": "https://avatars1.githubusercontent.com/u/49032425?s=400&u=dd2fbfe25654a06c3a711cb65a9d14a47c0d5195&v=4",
@@ -24,10 +32,28 @@
     "instagram": "https://www.instagram.com/aashrut_vaghani",
     "position": "Tech Lead"
   },
+  "Damilola Omiyera": {
+    "name": "Damilola Omiyera",
+    "image_url": "https://avatars2.githubusercontent.com/u/25831498?s=400&u=b7659fe2973ac4f2ef0600d4dacd9c816816d068&v=4",
+    "linkedin": "https://www.linkedin.com/in/damilola-omiyera-115980150/",
+    "github": "https://github.com/oomis",
+    "twitter": "https://twitter.com/Iam_omis",
+    "instagram": "https://www.instagram.com/r_omis",
+    "position": "Outreach Coordinator"
+  },
   "Ankita Sharma": {
     "name": "Ankita Sharma",
     "image_url": "https://media-exp1.licdn.com/dms/image/C5103AQHww880DWfFrw/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=hum1guvp8NNq2ckP5PzcjY6yRkbqWg4bEx1bZ22Tkk0",
     "linkedin": "https://www.linkedin.com/in/ankita-sharma-83ab64146/",
     "position": "Design Lead"
+  },
+  "Aanisha Bhattacharyya": {
+    "name": "Aanisha Bhattacharyya",
+    "image_url": "https://avatars0.githubusercontent.com/u/43934116?s=460&u=2204c10b2213d8201a8ba0fb06437f1018a4b861&v=4",
+    "linkedin": "https://www.linkedin.com/in/aanisha-bhattacharyya-957840178",
+    "github": "https://github.com/Aanisha",
+    "twitter": "https://twitter.com/AanishaBhattac2",
+    "instagram": "",
+    "position": "Tech Lead"
   }
 }
