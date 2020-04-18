@@ -1,0 +1,20 @@
+{
+
+  "Syed Farhan Ahmad": {
+    "name": "Syed Farhan Ahmad",
+    "image_url": "https://user-images.githubusercontent.com/42010556/79631547-a3f42800-8177-11ea-890e-c78f2289db6f.jpeg",
+    "linkedin": "https://www.linkedin.com/in/syedfarhanahmad/",
+    "github": "https://github.com/born-2learn",
+    "twitter": "https://twitter.com/syedfarhanrvce",
+    "position": "Organizer"
+  },
+  "Aditya Raman": {
+    "name": "Aditya Raman",
+    "image_url": "users/ramanaditya.jpg",
+    "linkedin": "https://www.linkedin.com/in/ramanaditya/",
+    "github": "https://github.com/ramanaditya",
+    "twitter": "https://twitter.com/_adityaraman",
+    "instagram": "",
+    "position": "Tech Lead"
+  }
+}
