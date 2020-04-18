@@ -10,7 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'hackcovid19/img/favicon.png' %}">
+{#    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicons/favicon.ico' %}">#}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -38,33 +42,33 @@
 
     {% include 'hackcovid19/footer.html' %}
     <!-- JS here -->
-    <script src="{% static 'hackcovid19/js/vendor/modernizr-3.5.0.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/vendor/jquery-1.12.4.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/popper.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/bootstrap.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/owl.carousel.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/isotope.pkgd.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/ajax-form.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/waypoints.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.counterup.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/imagesloaded.pkgd.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/scrollIt.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.scrollUp.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/wow.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/nice-select.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.slicknav.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.magnific-popup.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.countdown.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/plugins.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/popper.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/ajax-form.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/scrollIt.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/wow.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/nice-select.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.countdown.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/plugins.js' %}"></script>
 
     <!--contact js-->
-    <script src="{% static 'hackcovid19/js/contact.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.ajaxchimp.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.form.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/jquery.validate.min.js' %}?{% now 'U' %}"></script>
-    <script src="{% static 'hackcovid19/js/mail-script.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/contact.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.form.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/mail-script.js' %}"></script>
 
-    <script src="{% static 'hackcovid19/js/main.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/main.js' %}"></script>
 
 </body>
 
