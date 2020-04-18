@@ -21,6 +21,10 @@ urlpatterns = [
         "hackcovid19/",
         include("microsoft_student_partners.hackcovid19.urls", namespace="hackcovid19"),
     ),
+    path(
+        "qpower/",
+        include("microsoft_student_partners.qpower.urls", namespace="qpower"),
+    ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
