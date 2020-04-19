@@ -5,6 +5,7 @@ This is the unofficial website for the Microsoft Student Partners
 
 ![image](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg)
 ![image](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![GitHub Release](https://img.shields.io/github/v/release/ramanaditya/Microsoft-Student-Partners.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/releases/)
 [![GitHub license](https://img.shields.io/github/license/ramanaditya/Microsoft-Student-Partners.svg?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/ramanaditya/Microsoft-Student-Partners.svg?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/ramanaditya/Microsoft-Student-Partners.svg?logo=github&color=teal)](https://github.com/ramanaditya/Microsoft-Student-Partners/network/members) 

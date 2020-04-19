@@ -18,6 +18,12 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
     path(
+        "certificates/",
+        include(
+            "microsoft_student_partners.certificates.urls", namespace="certificates"
+        ),
+    ),
+    path(
         "hackcovid19/",
         include("microsoft_student_partners.hackcovid19.urls", namespace="hackcovid19"),
     ),
