@@ -1,0 +1,48 @@
+{
+
+  "Syed Farhan Ahmad": {
+    "name": "Syed Farhan Ahmad",
+    "image_url": "https://user-images.githubusercontent.com/42010556/79631547-a3f42800-8177-11ea-890e-c78f2289db6f.jpeg",
+    "linkedin": "https://www.linkedin.com/in/syedfarhanahmad/",
+    "github": "https://github.com/born-2learn",
+    "twitter": "https://twitter.com/syedfarhanrvce",
+    "position": "Organizer"
+  },
+  "Aditya Raman": {
+    "name": "Aditya Raman",
+    "image_url": "users/ramanaditya.jpg",
+    "linkedin": "https://www.linkedin.com/in/ramanaditya/",
+    "github": "https://github.com/ramanaditya",
+    "twitter": "https://twitter.com/_adityaraman",
+    "instagram": "",
+    "position": "Tech Lead"
+  },
+  "Rohit Ashiwal": {
+    "name": "Rohit Ashiwal",
+    "image_url": "https://rashiwal.me/profile.jpg",
+    "linkedin": "https://www.linkedin.com/in/rohit-ashiwal/",
+    "github": "https://github.com/r1walz",
+    "twitter": "https://twitter.com/r1walz",
+    "instagram": "",
+    "position": "Curriculum Design Team Member"
+  },
+  "Manish Bhattarai": {
+    "name": "Manish Bhattarai",
+    "image_url": "https://avatars1.githubusercontent.com/u/33629469?s=460&u=df60cbcbcc33df832f4d946bf1df048ff24dae41&v=4",
+    "linkedin": "https://www.linkedin.com/in/tecchy/",
+    "github": "https://github.com/nepalikingpin",
+    "twitter": "https://twitter.com/mni_shh",
+    "instagram": "",
+    "position": "Event Coordinator"
+  }
+  ,
+  "Vedant Khairnar": {
+    "name": "Vedant Khairnar",
+    "image_url": "https://avatars1.githubusercontent.com/u/42309779?v=4",
+    "linkedin": "https://www.linkedin.com/in/vedantkhairnar/",
+    "github": "https://github.com/VedantKhairnar",
+    "twitter": "https://twitter.com/VedantKhairnar3",
+    "instagram": "https://www.instagram.com/kingsmanvk/",
+    "position": "Marketing Team Member"
+  }
+}

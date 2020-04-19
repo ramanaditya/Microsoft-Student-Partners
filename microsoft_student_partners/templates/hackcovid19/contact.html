@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -13,16 +14,16 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/bootstrap.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/owl.carousel.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/magnific-popup.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/font-awesome.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/themify-icons.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/nice-select.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/flaticon.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/animate.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/slicknav.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/style.css' %}?{% now 'U' %}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -165,10 +166,10 @@
                     </script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
                     </script>
-    
+
                 </div>
-    
-    
+
+
                 <div class="row">
                     <div class="col-12">
                         <h2 class="contact-title">Get in Touch</h2>
@@ -229,7 +230,7 @@
             </div>
         </section>
     <!-- ================ contact section end ================= -->
-    
+
     <!-- footer_start -->
     <footer class="footer footer_bg_1">
         <div class="circle_ball d-none d-lg-block">
@@ -249,7 +250,7 @@
                                     <li><a target="_blank" href="#">Instagram</a></li>
                                     <li><a target="_blank" href="#">Youtube</a></li>
                                 </ul>
-    
+
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-4 col-lg-4">
@@ -273,7 +274,7 @@
                                     200, D-block, Green lane USA <br>
                                     edumark@contact.com <br>
                                     +10 367 467 8934
-                                    
+
                                 </p>
                             </div>
                         </div>
@@ -296,36 +297,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </footer>
     <!-- footer_end -->
-        
-        <!-- JS here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/ajax-form.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/scrollIt.js"></script>
-        <script src="js/jquery.scrollUp.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/nice-select.min.js"></script>
-        <script src="js/jquery.slicknav.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.countdown.js"></script>
-        <script src="js/plugins.js"></script>
-    
-        <!--contact js-->
-        <script src="js/contact.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/mail-script.js"></script>
-    
-        <script src="js/main.js"></script>
-    
+
+            <!-- JS here -->
+    <script src="{% static 'hackcovid19/js/vendor/modernizr-3.5.0.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/vendor/jquery-1.12.4.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/popper.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/bootstrap.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/owl.carousel.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/isotope.pkgd.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/ajax-form.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/waypoints.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.counterup.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/imagesloaded.pkgd.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/scrollIt.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.scrollUp.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/wow.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/nice-select.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.slicknav.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.magnific-popup.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.countdown.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/plugins.js' %}?{% now 'U' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'hackcovid19/js/contact.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.ajaxchimp.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.form.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.validate.min.js' %}?{% now 'U' %}"></script>
+    <script src="{% static 'hackcovid19/js/mail-script.js' %}?{% now 'U' %}"></script>
+
+    <script src="{% static 'hackcovid19/js/main.js' %}?{% now 'U' %}"></script>
+
+
     </body>
-    
+
     </html>

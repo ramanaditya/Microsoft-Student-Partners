@@ -27,3 +27,16 @@ certifi==2020.4.5.1
 chardet==3.0.4
 idna==2.9
 urllib3!==1.25.8
+numpy==1.18.2
+pandas==1.0.3
+
+# PDF
+img2pdf==0.3.4
+PyMuPDF==1.16.17
+
+# Email : Sendgrid
+python-http-client==3.2.7
+sendgrid==6.2.2
+
+# Github
+PyGithub==1.47

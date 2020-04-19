@@ -23,13 +23,15 @@ ALLOWED_HOSTS = [
 # DATABASES["default"] = env.db("DATABASE_URL")  # noqa F405
 # DATABASES["default"]["ATOMIC_REQUESTS"] = True  # noqa F405
 # DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # noqa F405
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": os.path.join(ROOT_DIR, "db.sqlite3"),
-#     }
-# }
-# DATABASES["default"]["ATOMIC_REQUESTS"] = True
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(ROOT_DIR, "db.sqlite3"),
+        "USER": os.environ.get("ADMIN_USERNAME"),
+        "PASSWORD": os.environ.get("ADMIN_PASSWORD"),
+    }
+}
+DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 
 # CACHES
@@ -173,3 +175,7 @@ sentry_sdk.init(dsn=SENTRY_DSN, integrations=[sentry_logging, DjangoIntegration(
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# GitHub API KEY
+GITHUB_OAUTH_TOKEN = os.environ.get("GITHUB_OAUTH_TOKEN")
+GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME")

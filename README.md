@@ -5,6 +5,7 @@ This is the unofficial website for the Microsoft Student Partners
 
 ![image](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg)
 ![image](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![GitHub Release](https://img.shields.io/github/v/release/ramanaditya/Microsoft-Student-Partners.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/releases/)
 [![GitHub license](https://img.shields.io/github/license/ramanaditya/Microsoft-Student-Partners.svg?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/ramanaditya/Microsoft-Student-Partners.svg?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/ramanaditya/Microsoft-Student-Partners.svg?logo=github&color=teal)](https://github.com/ramanaditya/Microsoft-Student-Partners/network/members) 
@@ -98,19 +99,6 @@ Moved to `Live reloading and SASS compilation`_.
 
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
-## Celery
-
-This app comes with Celery.
-
-To run a celery worker:
-
-```bash
-cd microsoft_student_partners
-celery -A config.celery_app worker -l info
-```
-
-Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
-
 ## Sentry
 
 Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/?code=cookiecutter  or download and host it yourself.
@@ -135,6 +123,16 @@ You must set the DSN url in production.
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/ramanaditya/Microsoft-Student-Partners?logo=git&logoColor=white)](https://github.com/ramanaditya/Microsoft-Student-Partners/compare) 
 [![GitHub contributors](https://img.shields.io/github/contributors/ramanaditya/Microsoft-Student-Partners?logo=github)](https://github.com/ramanaditya/Microsoft-Student-Partners/graphs/contributors) 
 
+
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/0)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/0)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/1)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/1)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/2)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/2)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/3)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/3)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/4)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/4)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/5)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/5)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/6)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/6)
+[![](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/images/7)](https://sourcerer.io/fame/ramanaditya/ramanaditya/Microsoft-Student-Partners/links/7)
+
 - Write clear meaningful git commit messages (Do read [this](http://chris.beams.io/posts/git-commit/)).
 
 - Make sure your PR's description contains GitHub's special keyword references that automatically close the related issue when the PR is merged. (Check [this](https://github.com/blog/1506-closing-issues-via-pull-requests) for more info)
@@ -150,6 +148,9 @@ You must set the DSN url in production.
 - Please read our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 - Refer [this](https://github.com/ramanaditya/Microsoft-Student-Partners/blob/master/CONTRIBUTING.md) for more.
+
+
+> If you like this [repository](https://github.com/ramanaditya/data-structure-and-algorithms), support it by star :star2:
 
 
 [![with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/) [![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/)

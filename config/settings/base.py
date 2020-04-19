@@ -88,6 +88,9 @@ LOCAL_APPS = [
     # Your stuff: custom apps go here
     "microsoft_student_partners.msp.apps.MspConfig",
     "microsoft_student_partners.hackcovid19.apps.Hackcovid19Config",
+    "microsoft_student_partners.github.apps.GithubConfig",
+    "microsoft_student_partners.qpower.apps.QpowerConfig",
+    "microsoft_student_partners.certificates.apps.CertificatesConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -267,7 +270,9 @@ LOGGING = {
 
 # django-allauth
 # ------------------------------------------------------------------------------
-ACCOUNT_ALLOW_REGISTRATION = bool(os.environ.get("DJANGO_ACCOUNT_ALLOW_REGISTRATION"))  #default : True
+ACCOUNT_ALLOW_REGISTRATION = bool(
+    os.environ.get("DJANGO_ACCOUNT_ALLOW_REGISTRATION")
+)  # default : True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_AUTHENTICATION_METHOD = "username"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
@@ -282,3 +287,7 @@ SOCIALACCOUNT_ADAPTER = "microsoft_student_partners.users.adapters.SocialAccount
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+# GitHub API KEY
+GITHUB_OAUTH_TOKEN = os.environ.get("GITHUB_OAUTH_TOKEN")
+GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME")
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
