@@ -90,6 +90,7 @@ LOCAL_APPS = [
     "microsoft_student_partners.hackcovid19.apps.Hackcovid19Config",
     "microsoft_student_partners.github.apps.GithubConfig",
     "microsoft_student_partners.qpower.apps.QpowerConfig",
+    "microsoft_student_partners.certificates.apps.CertificatesConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
