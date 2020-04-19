@@ -98,19 +98,6 @@ Moved to `Live reloading and SASS compilation`_.
 
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
-## Celery
-
-This app comes with Celery.
-
-To run a celery worker:
-
-```bash
-cd microsoft_student_partners
-celery -A config.celery_app worker -l info
-```
-
-Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
-
 ## Sentry
 
 Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/?code=cookiecutter  or download and host it yourself.
@@ -160,6 +147,9 @@ You must set the DSN url in production.
 - Please read our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 - Refer [this](https://github.com/ramanaditya/Microsoft-Student-Partners/blob/master/CONTRIBUTING.md) for more.
+
+
+> If you like this [repository](https://github.com/ramanaditya/data-structure-and-algorithms), support it by star :star2:
 
 
 [![with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/) [![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/ramanaditya/Microsoft-Student-Partners/)
