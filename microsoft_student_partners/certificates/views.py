@@ -106,7 +106,10 @@ class Certificate:
 
         """Saving Image"""
         IMG_SAVE_DIR = str(ROOT_DIR) + "/microsoft_student_partners/media/"
-        os.mkdir(IMG_SAVE_DIR)
+        try:
+            os.mkdir(IMG_SAVE_DIR)
+        except:
+            pass
         img_name = first_name + "_" + last_name
         img.save(IMG_SAVE_DIR + img_name + ".png")
         img_path = IMG_SAVE_DIR + img_name + ".png"
