@@ -10,7 +10,6 @@ class Hackcovid19(View):
     template_name = "hackcovid19/index.html"
 
     def get(self, request, *args, **kwargs):
-        organizers = dict()
         with open(
             "microsoft_student_partners/hackcovid19/organizers.json"
         ) as json_file:
