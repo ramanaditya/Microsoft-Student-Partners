@@ -49,7 +49,7 @@
   },
   "Ankita Sharma": {
     "name": "Ankita Sharma",
-    "image_url": "https://media-exp1.licdn.com/dms/image/C5103AQHww880DWfFrw/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=hum1guvp8NNq2ckP5PzcjY6yRkbqWg4bEx1bZ22Tkk0",
+    "image_url": "",
     "linkedin": "https://www.linkedin.com/in/ankita-sharma-83ab64146/",
     "position": "Design Lead"
   },
@@ -70,5 +70,14 @@
     "twitter": "https://twitter.com/Iam_omis",
     "instagram": "",
     "position": "Outreach Coordinator"
+  },
+  "Akash Srivastava ": {
+      "name": "Akash Srivastava ",
+      "image_url": "",
+      "linkedin": "https://www.linkedin.com/in/akash-s-233ab3160",
+      "github": "",
+      "twitter": "",
+      "instagram": "",
+      "position": "Design Head and Idea Reviewer"
   }
 }
