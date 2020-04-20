@@ -1,0 +1,201 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>certificates</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+{#    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicons/favicon.ico' %}">#}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/bootstrap.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/owl.carousel.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/magnific-popup.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/font-awesome.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/themify-icons.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/nice-select.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/flaticon.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/animate.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/slicknav.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'hackcovid19/css/style.css' %}?{% now 'U' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    {% include 'certificates/header.html' %}
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area slider_bg_1">
+        <div class="slider_text">
+{#            <div class="container">#}
+{#                <div class="position_relv">#}
+{#                    <div class="row col-xl-8 title_text title_text2">#}
+{#                        <h3 class="">Projects</h3>#}
+{#                        <div class="col-xl-8">#}
+{#                            <div class="title_text title_text2 ">#}
+{#                                <h3>Projects</h3>#}
+{#                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+        </div>
+{#        <div class="countDOwn_area">#}
+{#            <div class="container">#}
+{#                <div class="row align-items-center">#}
+{#                    <div class="col-xl-4 col-md-6 col-lg-4">#}
+{#                        <div class="single_date">#}
+{#                            <i class="ti-location-pin"></i>#}
+{#                            <span>City Hall, New York City</span>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-xl-3 col-md-6 col-lg-3">#}
+{#                        <div class="single_date">#}
+{#                            <i class="ti-alarm-clock"></i>#}
+{#                            <span>12-15 Sep 2019</span>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-xl-5 col-md-12 col-lg-5">#}
+{#                        <span id="clock"></span>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+    <!-- slider_area_end -->
+
+
+    <!--================Blog Area =================-->
+    <!-- Organizers Start -->
+    <div class="speakers_area" id="projects">
+        <h1 class="horizontal_text d-none d-lg-block">
+          Certificate
+        </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="serction_title_large mb-95">
+                        <h3>
+                            Certificate
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+      {% if context %}
+      <div class="resister_book resister_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="resister_text text-center">
+                        <img src="{{ MEDIA_URL}}{{ context.img_file }}" style="max-width: 100%;">
+                  </div><br><hr>
+                  <div class="resister_text text-center">
+                        <a target="_blank" href="{{ MEDIA_URL}}{{ context.img_file }}" class="boxed-btn-white">View Your Certificate</a>
+                        <a target="_blank" href="{{ MEDIA_URL }}{{ context.pdf_file }}" class="boxed-btn-white" download>Download Certificate in pdf</a>
+                        <a class="boxed-btn-white disable">Email (Disabled)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  {% endif %}
+        <section class="contact-section">
+            <div class="container">
+{#              {% if context %}#}
+{#              {% endif %}#}
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title">Generate your certificate : Testing</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <form enctype="multipart/form-data" class="form-contact contact_form" action="" method="post" novalidate="novalidate">
+                          {% csrf_token %}
+                          <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="first_name" id="first_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your first_name'" placeholder="first_name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="last_name" id="last_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email last name'" placeholder="last_name">
+                                    </div>
+                                </div>
+                              <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input disabled class="form-control" name="event_name" id="event_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" value="This is a Sample Event (Disabled) " placeholder="This is a Sample Event (Disabled) ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <a href="{% url 'certificates:home' %}"><button type="submit" class="button button-contactForm boxed-btn">Generate Certificate</button></a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+  </div>
+    <!-- ================ contact section end ================= -->
+
+    </div>
+    <!--================Blog Area =================-->
+
+    {% include 'certificates/footer.html' %}
+    <!-- JS here -->
+    <script src="{% static 'hackcovid19/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/popper.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/ajax-form.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/scrollIt.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/wow.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/nice-select.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.countdown.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/plugins.js' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'hackcovid19/js/contact.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.form.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'hackcovid19/js/mail-script.js' %}"></script>
+
+    <script src="{% static 'hackcovid19/js/main.js' %}"></script>
+
+</body>
+</html>

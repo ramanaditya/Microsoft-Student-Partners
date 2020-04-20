@@ -290,3 +290,4 @@ SOCIALACCOUNT_ADAPTER = "microsoft_student_partners.users.adapters.SocialAccount
 # GitHub API KEY
 GITHUB_OAUTH_TOKEN = os.environ.get("GITHUB_OAUTH_TOKEN")
 GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME")
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
