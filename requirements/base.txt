@@ -17,7 +17,7 @@ django-debug-toolbar==2.2
 sqlparse==0.3.1
 django_extensions==2.2.8
 
-# Django REST Framewor k
+# Django REST Framework
 djangorestframework==3.11.0  # https://github.com/encode/django-rest-framework
 
 # Other
