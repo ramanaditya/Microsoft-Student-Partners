@@ -179,3 +179,4 @@ sentry_sdk.init(dsn=SENTRY_DSN, integrations=[sentry_logging, DjangoIntegration(
 # GitHub API KEY
 GITHUB_OAUTH_TOKEN = os.environ.get("GITHUB_OAUTH_TOKEN")
 GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME")
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
