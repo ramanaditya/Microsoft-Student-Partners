@@ -28,7 +28,10 @@ DATABASES = {
         "PASSWORD": os.environ.get("ADMIN_PASSWORD"),
         "HOST": "mspglobalserver.database.windows.net",
         "PORT": "",
-        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server",},
+        "OPTIONS": {
+            "driver": "ODBC Driver 13 for SQL Server",
+            'MARS_Connection': 'True',
+            },
     }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
@@ -179,4 +182,3 @@ sentry_sdk.init(dsn=SENTRY_DSN, integrations=[sentry_logging, DjangoIntegration(
 # GitHub API KEY
 GITHUB_OAUTH_TOKEN = os.environ.get("GITHUB_OAUTH_TOKEN")
 GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME")
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")

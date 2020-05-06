@@ -11,5 +11,5 @@ sentry-sdk==0.14.1  # https://github.com/getsentry/sentry-python
 django-anymail[mailgun]==7.0.0  # https://github.com/anymail/django-anymail
 
 # Azure DB
-pyodbc==4.0.30
 django-pyodbc-azure==2.1.0.0
+pyodbc==4.0.30
