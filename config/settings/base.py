@@ -87,7 +87,7 @@ LOCAL_APPS = [
     "microsoft_student_partners.users.apps.UsersConfig",
     # Your stuff: custom apps go here
     "microsoft_student_partners.msp.apps.MspConfig",
-    "microsoft_student_partners.hackcovid19.apps.Hackcovid19Config",
+    "microsoft_student_partners.mspsoc.apps.MspsocConfig",
     "microsoft_student_partners.github.apps.GithubConfig",
     "microsoft_student_partners.qpower.apps.QpowerConfig",
     "microsoft_student_partners.certificates.apps.CertificatesConfig",
