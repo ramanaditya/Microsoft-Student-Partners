@@ -1,5 +1,4 @@
 {
-
   "Syed Farhan Ahmad": {
     "name": "Syed Farhan Ahmad",
     "image_url": "https://user-images.githubusercontent.com/42010556/79631547-a3f42800-8177-11ea-890e-c78f2289db6f.jpeg",
@@ -34,8 +33,16 @@
     "twitter": "https://twitter.com/mni_shh",
     "instagram": "",
     "position": "Event Coordinator"
-  }
-  ,
+  },
+  "Anusuya Sijapati":{
+     "name": "Anusuya Sijapati",
+    "image_url": "https://stdntpartners-my.sharepoint.com/:i:/g/personal/anusuya_sijapati_studentpartner_com/EXtBLNv-o4xEpLXF6WcmFBUBO7lLYw6gVyAxeMA78ATD6g?e=8jKWdN",
+    "linkedin": "https://www.linkedin.com/in/anusuya-sijapati-11b452129/",
+    "github": "https://github.com/Anusuyayusuna",
+    "twitter": "https://twitter.com/AnusuyaSijapati",
+    "instagram": "https://www.instagram.com/anusuyasijapati/?hl=en",
+    "position": "Event Coordination and Curriculum Discussion"
+  },
   "Vedant Khairnar": {
     "name": "Vedant Khairnar",
     "image_url": "https://avatars1.githubusercontent.com/u/42309779?v=4",
@@ -44,5 +51,20 @@
     "twitter": "https://twitter.com/VedantKhairnar3",
     "instagram": "https://www.instagram.com/kingsmanvk/",
     "position": "Marketing Team Member"
+  },
+  "Ricardo Prins": {
+    "name": "Ricardo Prins",
+    "image_url": "",
+    "linkedin": "https://www.linkedin.com/in/rprins/",
+    "github": "https://github.com/ricardoprins",
+    "position": "Event Coordinator"
+  },
+  "Debanjona Bhattacharjya": {
+    "name": "Debanjona Bhattacharjya",
+    "image_url": "https://avatars2.githubusercontent.com/u/37831166?s=400&u=07b621b3f592fd5df89cd6b32146744b933c8503&v=4",
+    "linkedin": "https://www.linkedin.com/in/debanjona-bhattacharjya-0858a4165/",
+    "github": "https://github.com/DEBANJANAB",
+    "instagram": "https://www.instagram.com/_debanjana_bhattacharjya/",
+ 	  "position": "Marketing Team Member"
   }
 }

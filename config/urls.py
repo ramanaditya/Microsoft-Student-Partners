@@ -24,8 +24,8 @@ urlpatterns = [
         ),
     ),
     path(
-        "hackcovid19/",
-        include("microsoft_student_partners.hackcovid19.urls", namespace="hackcovid19"),
+        "mspsoc/",
+        include("microsoft_student_partners.mspsoc.urls", namespace="mspsoc"),
     ),
     path(
         "qpower/",
