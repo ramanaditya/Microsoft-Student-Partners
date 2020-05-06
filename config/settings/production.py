@@ -26,7 +26,7 @@ DATABASES = {
         "NAME": os.environ.get("DB_NAME"),
         "USER": os.environ.get("ADMIN_USERNAME"),
         "PASSWORD": os.environ.get("ADMIN_PASSWORD"),
-        "HOST": "myserver.database.windows.net",
+        "HOST": "mspglobalserver.database.windows.net",
         "PORT": "",
         "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server",},
     }
