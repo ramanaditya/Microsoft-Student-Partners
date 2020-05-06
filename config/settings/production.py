@@ -26,11 +26,10 @@ DATABASES = {
         "NAME": os.environ.get("DB_NAME"),
         "USER": os.environ.get("ADMIN_USERNAME"),
         "PASSWORD": os.environ.get("ADMIN_PASSWORD"),
-        "HOST": "mspglobalserver.database.windows.net",
-        "PORT": "",
+        "HOST": "tcp:mspglobalserver.database.windows.net",
+        "PORT": "1433",
         "OPTIONS": {
             "driver": "ODBC Driver 13 for SQL Server",
-            'MARS_Connection': 'True',
             },
     }
 }
