@@ -39,37 +39,11 @@
     "instagram": "https://www.instagram.com/smritichaudhary",
     "position": "Outreach Coordinator"
   },
-  "Syed Farhan Ahmad": {
-    "name": "Syed Farhan Ahmad",
-    "image_url": "https://user-images.githubusercontent.com/42010556/79631547-a3f42800-8177-11ea-890e-c78f2289db6f.jpeg",
-    "linkedin": "https://www.linkedin.com/in/syedfarhanahmad/",
-    "github": "https://github.com/born-2learn",
-    "twitter": "https://twitter.com/syedfarhanrvce",
-    "position": "Tech Lead"
-  },
-  "Aanisha Bhattacharyya": {
-    "name": "Aanisha Bhattacharyya",
-    "image_url": "https://avatars0.githubusercontent.com/u/43934116?s=460&u=2204c10b2213d8201a8ba0fb06437f1018a4b861&v=4",
-    "linkedin": "https://www.linkedin.com/in/aanisha-bhattacharyya-957840178",
-    "github": "https://github.com/Aanisha",
-    "twitter": "https://twitter.com/AanishaBhattac2",
-    "instagram": "",
-    "position": "Tech Lead"
-  },
   "Ankita Sharma": {
     "name": "Ankita Sharma",
     "image_url": "",
     "linkedin": "https://www.linkedin.com/in/ankita-sharma-83ab64146/",
-    "position": "Design Lead"
-  },
-  "Aashrut Vaghani": {
-    "name": "Aashrut Vaghani",
-    "image_url": "https://avatars1.githubusercontent.com/u/49032425?s=400&u=dd2fbfe25654a06c3a711cb65a9d14a47c0d5195&v=4",
-    "linkedin": "https://www.linkedin.com/in/aashrut-vaghani-06bab0184",
-    "github": "https://github.com/Aashrut",
-    "twitter": "",
-    "instagram": "https://www.instagram.com/aashrut_vaghani",
-    "position": "Tech Lead"
+    "position": "Design Team"
   },
   "Damilola Omiyera": {
     "name": "Damilola Omiyera",
@@ -87,6 +61,23 @@
       "github": "",
       "twitter": "",
       "instagram": "",
-      "position": "Design Head and Idea Reviewer"
+      "position": "Design Team"
+  },
+  "Dhruv Trehan": {
+    "name": "Dhruv Trehan",
+    "image_url": "",
+    "linkedin": "https://www.linkedin.com/in/dhruv-trehan-8a0466156/",
+    "Youtube": "",
+    "instagram":"https://www.instagram.com/dhruv_trehan_/",
+    "position":"Outreach Coordinator"
+  },
+  "Chirag Sharma": {
+    "name": "Chirag Sharma",
+    "image_url": "",
+    "linkedin": "https://www.linkedin.com/in/chirag-sharma-3a96b216b/",
+    "github": "https://github.com/sharmachirag123",
+    "twitter": "https://twitter.com/ChiragS92785609",
+    "instagram": "",
+    "position": "Outreach Coordinator"
   }
 }
