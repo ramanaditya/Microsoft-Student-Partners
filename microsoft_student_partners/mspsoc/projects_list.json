@@ -67,14 +67,14 @@
             "releases_url": "https://api.github.com/repos/ramanaditya/Microsoft-Student-Partners/releases{/id}",
             "deployments_url": "https://api.github.com/repos/ramanaditya/Microsoft-Student-Partners/deployments",
             "created_at": "2020-04-11T12:08:48Z",
-            "updated_at": "2020-05-07T17:24:59Z",
-            "pushed_at": "2020-05-07T19:19:18Z",
+            "updated_at": "2020-05-07T20:34:43Z",
+            "pushed_at": "2020-05-07T20:34:40Z",
             "git_url": "git://github.com/ramanaditya/Microsoft-Student-Partners.git",
             "ssh_url": "git@github.com:ramanaditya/Microsoft-Student-Partners.git",
             "clone_url": "https://github.com/ramanaditya/Microsoft-Student-Partners.git",
             "svn_url": "https://github.com/ramanaditya/Microsoft-Student-Partners",
             "homepage": "http://mspglobal.azurewebsites.net/",
-            "size": 64117,
+            "size": 64097,
             "stargazers_count": 8,
             "watchers_count": 8,
             "language": "HTML",
@@ -87,7 +87,7 @@
             "mirror_url": null,
             "archived": false,
             "disabled": false,
-            "open_issues_count": 9,
+            "open_issues_count": 8,
             "license": {
                 "key": "mit",
                 "name": "MIT License",
@@ -96,7 +96,7 @@
                 "node_id": "MDc6TGljZW5zZTEz"
             },
             "forks": 26,
-            "open_issues": 9,
+            "open_issues": 8,
             "watchers": 8,
             "default_branch": "master",
             "permissions": {
@@ -112,10 +112,10 @@
             "network_count": 26,
             "subscribers_count": 2,
             "languages": {
-                "HTML": 721637,
-                "CSS": 369516,
+                "HTML": 722863,
+                "CSS": 371639,
                 "JavaScript": 82667,
-                "Python": 58854,
+                "Python": 60017,
                 "Shell": 4142
             }
         }
@@ -188,14 +188,14 @@
             "releases_url": "https://api.github.com/repos/ramanaditya/Microsoft-Student-Partners/releases{/id}",
             "deployments_url": "https://api.github.com/repos/ramanaditya/Microsoft-Student-Partners/deployments",
             "created_at": "2020-04-11T12:08:48Z",
-            "updated_at": "2020-05-07T17:24:59Z",
-            "pushed_at": "2020-05-07T19:19:18Z",
+            "updated_at": "2020-05-07T20:34:43Z",
+            "pushed_at": "2020-05-07T20:34:40Z",
             "git_url": "git://github.com/ramanaditya/Microsoft-Student-Partners.git",
             "ssh_url": "git@github.com:ramanaditya/Microsoft-Student-Partners.git",
             "clone_url": "https://github.com/ramanaditya/Microsoft-Student-Partners.git",
             "svn_url": "https://github.com/ramanaditya/Microsoft-Student-Partners",
             "homepage": "http://mspglobal.azurewebsites.net/",
-            "size": 64117,
+            "size": 64097,
             "stargazers_count": 8,
             "watchers_count": 8,
             "language": "HTML",
@@ -208,7 +208,7 @@
             "mirror_url": null,
             "archived": false,
             "disabled": false,
-            "open_issues_count": 9,
+            "open_issues_count": 8,
             "license": {
                 "key": "mit",
                 "name": "MIT License",
@@ -217,7 +217,7 @@
                 "node_id": "MDc6TGljZW5zZTEz"
             },
             "forks": 26,
-            "open_issues": 9,
+            "open_issues": 8,
             "watchers": 8,
             "default_branch": "master",
             "permissions": {
@@ -233,10 +233,10 @@
             "network_count": 26,
             "subscribers_count": 2,
             "languages": {
-                "HTML": 721637,
-                "CSS": 369516,
+                "HTML": 722863,
+                "CSS": 371639,
                 "JavaScript": 82667,
-                "Python": 58854,
+                "Python": 60017,
                 "Shell": 4142
             }
         }
@@ -428,14 +428,14 @@
             "releases_url": "https://api.github.com/repos/ramanaditya/Microsoft-Student-Partners/releases{/id}",
             "deployments_url": "https://api.github.com/repos/ramanaditya/Microsoft-Student-Partners/deployments",
             "created_at": "2020-04-11T12:08:48Z",
-            "updated_at": "2020-05-07T17:24:59Z",
-            "pushed_at": "2020-05-07T19:19:18Z",
+            "updated_at": "2020-05-07T20:34:43Z",
+            "pushed_at": "2020-05-07T20:34:40Z",
             "git_url": "git://github.com/ramanaditya/Microsoft-Student-Partners.git",
             "ssh_url": "git@github.com:ramanaditya/Microsoft-Student-Partners.git",
             "clone_url": "https://github.com/ramanaditya/Microsoft-Student-Partners.git",
             "svn_url": "https://github.com/ramanaditya/Microsoft-Student-Partners",
             "homepage": "http://mspglobal.azurewebsites.net/",
-            "size": 64117,
+            "size": 64097,
             "stargazers_count": 8,
             "watchers_count": 8,
             "language": "HTML",
@@ -448,7 +448,7 @@
             "mirror_url": null,
             "archived": false,
             "disabled": false,
-            "open_issues_count": 9,
+            "open_issues_count": 8,
             "license": {
                 "key": "mit",
                 "name": "MIT License",
@@ -457,7 +457,7 @@
                 "node_id": "MDc6TGljZW5zZTEz"
             },
             "forks": 26,
-            "open_issues": 9,
+            "open_issues": 8,
             "watchers": 8,
             "default_branch": "master",
             "permissions": {
@@ -473,10 +473,10 @@
             "network_count": 26,
             "subscribers_count": 2,
             "languages": {
-                "HTML": 721637,
-                "CSS": 369516,
+                "HTML": 722863,
+                "CSS": 371639,
                 "JavaScript": 82667,
-                "Python": 58854,
+                "Python": 60017,
                 "Shell": 4142
             }
         }
