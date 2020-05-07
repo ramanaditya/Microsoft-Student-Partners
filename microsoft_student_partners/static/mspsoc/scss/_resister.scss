@@ -7,7 +7,7 @@
     background-position: center  center;
     padding: 184px 0;
     @media #{$mobile_device}{
-        padding: 80px 0; 
+        padding: 80px 0;
     }
     .resister_text{
         h3{
@@ -48,7 +48,7 @@
                 width: auto;
                 display: inline-block;
                 filter: contrast(0);
-                @include transition(.3s);
+                @include transition(.2s);
             }
             &:hover{
                 img{
