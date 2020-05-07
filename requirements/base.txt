@@ -42,4 +42,4 @@ sendgrid==6.2.2
 PyGithub==1.47
 
 # Others
-psycopg2-binary==2.8.4
+# psycopg2-binary==2.8.4
