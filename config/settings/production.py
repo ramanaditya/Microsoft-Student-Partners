@@ -28,9 +28,7 @@ DATABASES = {
         "PASSWORD": os.environ.get("ADMIN_PASSWORD"),
         "HOST": "tcp:mspglobalserver.database.windows.net",
         "PORT": "1433",
-        "OPTIONS": {
-            "driver": "ODBC Driver 17 for SQL Server",
-            },
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server",},
     }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
