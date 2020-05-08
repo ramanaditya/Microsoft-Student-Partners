@@ -179,3 +179,9 @@ sentry_sdk.init(dsn=SENTRY_DSN, integrations=[sentry_logging, DjangoIntegration(
 # GitHub API KEY
 GITHUB_OAUTH_TOKEN = os.environ.get("GITHUB_OAUTH_TOKEN")
 GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME")
+
+# Twitter API KEY
+TWITTER_CONSUMER_API_KEY = os.environ.get("TWITTER_CONSUMER_API_KEY")
+TWITTER_CONSUMER_SECRET_KEY = os.environ.get("TWITTER_CONSUMER_SECRET_KEY")
+TWITTER_ACCESS_TOKEN = os.environ.get("TWITTER_ACCESS_TOKEN")
+TWITTER_ACCESS_TOKEN_SECRET = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")

@@ -7,6 +7,8 @@ from microsoft_student_partners.github.views import GitHub
 import os.path
 from os import path
 
+from microsoft_student_partners.twitter.views import Twitter
+
 
 class Mspsoc(View):
     template_name = "mspsoc/index.html"
@@ -70,4 +72,15 @@ class Project(View):
                     "microsoft_student_partners/mspsoc/projects_list.json", "w"
                 ) as projects_list_file:
                     projects_list_file.write(json.dumps(complete_info, indent=4))
+        return render(request, self.template_name, {"context": context})
+
+
+class Social:
+    template_name = "mspsoc/social.html"
+
+    def get(self, request, *args, **kwargs):
+        twitter = Twitter()
+        twitter.search_hashtags()
+        context = dict()
+
         return render(request, self.template_name, {"context": context})

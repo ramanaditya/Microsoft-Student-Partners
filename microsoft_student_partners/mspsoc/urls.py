@@ -27,4 +27,9 @@ urlpatterns = [
         TemplateView.as_view(template_name="mspsoc/elements.html"),
         name="elements",
     ),
+    path(
+        "social",
+        TemplateView.as_view(template_name="mspsoc/social.html"),
+        name="social",
+    ),
 ]
