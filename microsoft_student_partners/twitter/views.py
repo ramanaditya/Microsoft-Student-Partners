@@ -39,7 +39,9 @@ class Twitter:
                 "username": tweet.user.screen_name,
                 "name": tweet.user.name,
                 "background_color": tweet.user.profile_background_color,
-                "image": tweet.user.profile_image_url_https,
+                "image": tweet.user.profile_image_url_https.replace(
+                    "normal", "400x400"
+                ),
                 "tweet": tweet.text.encode("utf-8"),
             }
             data.append(row)

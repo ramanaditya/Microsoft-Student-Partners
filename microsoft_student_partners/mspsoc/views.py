@@ -116,5 +116,4 @@ class Social(View):
             twitter_list.append(temp)
 
         context["twitter"] = twitter_list
-        print(context)
         return render(request, self.template_name, {"context": context})
