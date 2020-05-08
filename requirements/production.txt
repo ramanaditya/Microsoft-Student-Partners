@@ -3,9 +3,13 @@
 -r ./base.txt
 
 gunicorn==20.0.4  # https://github.com/benoitc/gunicorn
-psycopg2==2.8.4 --no-binary psycopg2  # https://github.com/psycopg/psycopg2
+# psycopg2==2.8.4 --no-binary psycopg2  # https://github.com/psycopg/psycopg2
 sentry-sdk==0.14.1  # https://github.com/getsentry/sentry-python
 
 # Django
 # ------------------------------------------------------------------------------
 django-anymail[mailgun]==7.0.0  # https://github.com/anymail/django-anymail
+
+# Azure DB
+django-pyodbc-azure==2.1.0.0
+pyodbc==4.0.30

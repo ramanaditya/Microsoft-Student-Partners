@@ -22,10 +22,15 @@ ALLOWED_HOSTS = [
 # DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # noqa F405
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(ROOT_DIR, "db.sqlite3"),
+        "ENGINE": "sql_server.pyodbc",
+        "NAME": os.environ.get("DB_NAME"),
         "USER": os.environ.get("ADMIN_USERNAME"),
         "PASSWORD": os.environ.get("ADMIN_PASSWORD"),
+        "HOST": "tcp:mspglobalserver.database.windows.net",
+        "PORT": "1433",
+        "OPTIONS": {
+            "driver": "ODBC Driver 17 for SQL Server",
+            },
     }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
