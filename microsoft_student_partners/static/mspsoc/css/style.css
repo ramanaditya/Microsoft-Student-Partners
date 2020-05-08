@@ -3208,8 +3208,21 @@ h6 {
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
   background: #f9f9ff;
-  border-left: 2px solid #ff5e13;
+  border-left: 0.5em solid #ff5e13;
+  quotes: "\201C""\201D""\2018""\2019";
 }
+.generic-blockquote p {
+  font-size: 1.7em;
+  font-family: Georgia, serif;
+  font-style: italic;
+  display: block;
+}
+.generic-blockquote .author_name {
+  font-size: 1.5em;
+  text-align: right;
+  display: block;
+}
+
 
 /* line 353, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .progress-table-wrap {
