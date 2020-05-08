@@ -43,3 +43,7 @@ PyGithub==1.47
 
 # Others
 # psycopg2-binary==2.8.4
+
+# Twitter
+PySocks==1.7.1
+tweepy==3.8.0
