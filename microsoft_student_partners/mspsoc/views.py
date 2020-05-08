@@ -1,13 +1,19 @@
 import json
 
+import pandas as pd
+from django.conf import settings
 from django.shortcuts import render
 from django.views import View
-
+import datetime
 from microsoft_student_partners.github.views import GitHub
 import os.path
+import csv
 from os import path
 
 from microsoft_student_partners.twitter.views import Twitter
+
+ROOT_DIR = settings.ROOT_DIR
+THIS_DIR = str(ROOT_DIR) + "/microsoft_student_partners/mspsoc/"
 
 
 class Mspsoc(View):
@@ -25,7 +31,7 @@ class Project(View):
     def get(self, request, *args, **kwargs):
         context = {}
         fetched_info = []
-        if path.exists("project.json"):
+        if os.path.isfile(str(THIS_DIR) + "project.json"):
             with open(
                 "microsoft_student_partners/mspsoc/projects_list.json"
             ) as json_file:
@@ -44,7 +50,6 @@ class Project(View):
 
         for project in project_list:
             if project["repository"] not in context.keys():
-                print("Fatching")
                 data = dict()
 
                 repo_details = gh.get_repository(
@@ -67,7 +72,6 @@ class Project(View):
             if new_fetched_info:
                 complete_info = fetched_info
                 complete_info.extend(new_fetched_info)
-                print("Writing to file json")
                 with open(
                     "microsoft_student_partners/mspsoc/projects_list.json", "w"
                 ) as projects_list_file:
@@ -75,12 +79,42 @@ class Project(View):
         return render(request, self.template_name, {"context": context})
 
 
-class Social:
+class Social(View):
     template_name = "mspsoc/social.html"
 
     def get(self, request, *args, **kwargs):
-        twitter = Twitter()
-        twitter.search_hashtags()
         context = dict()
+        twitter_list = []
+        twitter = Twitter()
+        tweets_hashtags_info = []
+        tweets_df = pd.DataFrame()
+        CSV_FILE = str(THIS_DIR) + "tweets.csv"
 
+        if os.path.isfile(CSV_FILE):
+            tweets_df = pd.read_csv(CSV_FILE)
+
+        elif tweets_df.empty or datetime.datetime.now().hour % 2 == 0:
+            hashtags = ("#mspsoc", "#60daysofmspsoc", "#codewithmspsoc")
+            date = "2020-05-05"
+            fetched_info = twitter.search_hashtags(hashtags, date)
+            with open(str(THIS_DIR) + "tweets.csv", "w") as csv_file:
+                csv_writer = csv.writer(csv_file)
+                for pair in fetched_info:
+                    row = []
+                    for key, val in pair.items():
+                        row.append(val)
+                    csv_writer.writerow(row)
+            csv_file.close()
+        tweets_df = pd.read_csv(CSV_FILE)
+        for index, row in tweets_df.iterrows():
+            temp = dict()
+            temp["username"] = row[0]
+            temp["name"] = row[1]
+            temp["background_color"] = row[2]
+            temp["image"] = row[3]
+            temp["tweet"] = row[4]
+            twitter_list.append(temp)
+
+        context["twitter"] = twitter_list
+        print(context)
         return render(request, self.template_name, {"context": context})

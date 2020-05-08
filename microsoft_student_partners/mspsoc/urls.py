@@ -1,7 +1,7 @@
 from django.urls import path
 from django.views.generic.base import TemplateView
 
-from microsoft_student_partners.mspsoc.views import Mspsoc, Project
+from microsoft_student_partners.mspsoc.views import Mspsoc, Project, Social
 
 app_name = "mspsoc"
 urlpatterns = [
@@ -27,9 +27,5 @@ urlpatterns = [
         TemplateView.as_view(template_name="mspsoc/elements.html"),
         name="elements",
     ),
-    path(
-        "social",
-        TemplateView.as_view(template_name="mspsoc/social.html"),
-        name="social",
-    ),
+    path("social", view=Social.as_view(), name="social"),
 ]

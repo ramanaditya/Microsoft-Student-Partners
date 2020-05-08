@@ -3,6 +3,9 @@ import json
 import tweepy
 import requests
 from django.conf import settings
+import pandas as pd
+
+import csv
 
 # Create your views here.
 
@@ -23,17 +26,22 @@ class Twitter:
 
         self.TWITTER_API = tweepy.API(auth)
 
-    def get_twitter_user(self, user="mspsoc"):
+    def get_twitter_user(self, user=None):
         user = self.TWITTER_API.get_user(user)
         return user._json
 
-    def search_hashtags(self):
+    def search_hashtags(self, hashtags=None, date=None):
         data = []
         for tweet in tweepy.Cursor(
-            self.TWITTER_API.search,
-            q=("#mspsoc", "#60daysofmspsoc", "#codewithmspsoc"),
-            since="2020-05-05",
+            self.TWITTER_API.search, q=hashtags, since=date,
         ).items():
-            data.append(tweet._json)
-        print(data)
+            row = {
+                "username": tweet.user.screen_name,
+                "name": tweet.user.name,
+                "background_color": tweet.user.profile_background_color,
+                "image": tweet.user.profile_image_url_https,
+                "tweet": tweet.text.encode("utf-8"),
+            }
+            data.append(row)
+
         return data
