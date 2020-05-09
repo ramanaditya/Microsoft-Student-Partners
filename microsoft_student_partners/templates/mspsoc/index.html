@@ -1,221 +1,236 @@
 {% extends 'mspsoc/base.html' %}
 {% load static %}
 {% block content %}
-  <!-- slider_area_start -->
-    <div class="slider_area slider_bg_1" id="top">
-        <div class="slider_text">
-            <div class="container">
-                <div class="position_relv">
-                    <h1 class="opcity_text d-none d-lg-block">MSPSoC</h1>
-                    <div class="row">
-                        <div class="col-xl-9">
-                            <div class="title_text">
-                                <h3>MSP SUMMER<br>
-                                    OF CODE
-                                    </h3>
-                                <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9Pc2QJZLPBBoJtTqsH_GXxUMThURTdKVFg2NVFDS0dCWjI4UjZSMTk4Ty4u" class="boxed-btn-white">Submit your PROJECT</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- slider_area_start -->
+<div class="slider_area slider_bg_1" id="top">
+  <div class="slider_text">
+    <div class="container">
+      <div class="position_relv">
+        <h1 class="opcity_text d-none d-lg-block">MSPSoC</h1>
+        <div class="row">
+          <div class="col-xl-9">
+            <div class="title_text">
+              <h3>MSP SUMMER<br>
+                OF CODE
+              </h3>
+              <a target="_blank"
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9Pc2QJZLPBBoJtTqsH_GXxUMThURTdKVFg2NVFDS0dCWjI4UjZSMTk4Ty4u"
+                class="boxed-btn-white">Submit your PROJECT</a>
             </div>
+          </div>
         </div>
-
-        <div class="countDOwn_area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                        <div class="single_date">
-                            <i class="ti-alarm-clock"></i>
-                            <span>June 1, 2020</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="single_date">
-                            <i class="ti-alarm-clock"></i>
-                            <span>July 31, 2020</span>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-5 col-md-12 col-lg-5">
-                        <span id="clock"></span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <!-- slider_area_end -->
+  </div>
 
-    <!-- about_area_start -->
-    <div class="about_area">
-        <div class="shape-1 d-none d-xl-block">
-            <img src="{% static 'mspsoc/img/about/shap1.png' %}" alt="">
+  <div class="countDOwn_area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          <div class="single_date">
+            <i class="ti-alarm-clock"></i>
+            <span>June 1, 2020</span>
+          </div>
         </div>
-        <div class="shape-2 d-none d-xl-block">
-            <img src="{% static 'mspsoc/img/about/shap2.png' %}" alt="">
+        <div class="col-xl-3 col-md-6 col-lg-3">
+          <div class="single_date">
+            <i class="ti-alarm-clock"></i>
+            <span>July 31, 2020</span>
+          </div>
         </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-md-6">
-                    <div class="about_thumb">
-                        <img src="{% static 'microsoft/Visual ID and Logo/Code is Life Shield Logo/Blue/RGB/MSP_Shield_logo_RGB_Blue.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-md-6">
-                    <div class="about_info">
-                        <div class="section_title">
-                            <span class="sub_heading">Welcome To</span>
-                            <h3>Microsoft Student<br>
-                                Partners Summer<br>
-                                 of Code</h3>
-                        </div>
-                      <p>We are a bunch of MSP (Microsoft Student Partners) who came up with <b>"MSP Summer of Code"</b>.
-                        The aim behind this initiative is to mentor you on the Open Source Projects, particularly to get you accustomed with Open Source.
-                      Apart from mentorship, we would provide you with potential exclusive certificates, goodies and vouchers on successful completion of this 60 Days long program.</p>
-                      <p style="color:#2178d4;text-align: center;font-size: 1.6em;font-weight: bold;font-style:italic'word-spacing: 0.5em;">#mspsoc #60daysofmspsoc #codewithmspsoc</p>
-{#                        <a href="#" class="boxed-btn-red"><button disabled>Know More</a>#}
-                    </div>
-                </div>
-            </div>
+
+        <div class="col-xl-5 col-md-12 col-lg-5">
+          <span id="clock"></span>
         </div>
+
+      </div>
     </div>
-    <!-- about_area_end -->
-				<div class="row">
-          <div class="col-xl-1"></div>
-					<div class="col-xl-10">
-						<blockquote class="generic-blockquote">
+  </div>
+</div>
+<!-- slider_area_end -->
 
-              <div class="row">
-                <div class="col-xl-2 single_speaker" align="center" style="margin-top: 1em;">
-                  <img src="https://media-exp1.licdn.com/dms/image/C5603AQF0LMumDPyFkg/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=pKJFeCKszMd5097cdEJI8y2YGdwoWxttS-VlHtY95WA" alt="" style="max-width: 100%;border-radius: 50%">
-                </div>
-                <div class="col-xl-10 single_speaker">
-                  <i class="fa fa-quote-left" style="display: block;color: #ff5e13;font-size: 4em;margin-top: -0.4em;"></i>
-                  <p style="">In a world where the larger majority of society is careless, it’s the small percentage of people who make the choice to be different and prioritize work that stand out.
-              </p>
-              <p class="author_name">
-                ― Farshad Asl, The "No Excuses" Mindset: A Life of Purpose, Passion, and Clarity
-              </p>
-                  <i class="fa fa-quote-right" style="display: block;text-align: right;color: #ff5e13;font-size: 4em;margin-bottom: -0.5em;"></i>
-                </div>
-              </div>
-
-
-            </blockquote>
-					</div>
-        <div class="col-xl-1"></div>
-				</div>
-
-    <!-- speakers_start -->
-    <div class="speakers_area" id="speakers">
-        <h1 class="horizontal_text d-none d-lg-block">
-            Coming Soon
-        </h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Speakers
-                        </h3>
-                    </div>
-                </div>
-            </div>
-{#            <div class="row">#}
-{#                <div class="col-xl-5 col-md-6">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Jonson Miller</h3>#}
-{#                            <p>Creative Director</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/3.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Albert Jackey</h3>#}
-{#                            <p>Product Designer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-xl-5 offset-xl-2 col-md-6">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/2.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Marked Macau</h3>#}
-{#                            <p>UI/UX Designer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Kelvin Cooper</h3>#}
-{#                            <p>Art Director</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
+<!-- about_area_start -->
+<div class="about_area">
+  <div class="shape-1 d-none d-xl-block">
+    <img src="{% static 'mspsoc/img/about/shap1.png' %}" alt="">
+  </div>
+  <div class="shape-2 d-none d-xl-block">
+    <img src="{% static 'mspsoc/img/about/shap2.png' %}" alt="">
+  </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-md-6">
+        <div class="about_thumb">
+          <img
+            src="{% static 'microsoft/Visual ID and Logo/Code is Life Shield Logo/Blue/RGB/MSP_Shield_logo_RGB_Blue.png' %}"
+            alt="">
         </div>
+      </div>
+      <div class="col-xl-5 offset-xl-1 col-md-6">
+        <div class="about_info">
+          <div class="section_title">
+            <span class="sub_heading">Welcome To</span>
+            <h3>Microsoft Student<br>
+              Partners Summer<br>
+              of Code</h3>
+          </div>
+          <p>
+            Want to get started with Open Source? Don’t just sit around waiting for the right moment or inspiration to strike. Create, Contribute and succeed with MSPSoC. </p>
+            <p></p>
+             <b> MSP Summer Of Code (MSPSoC)</b> is a 2 month long Open Source program during summers conducted by the MSP Global with an aim to help beginners get started with Open Source Development while creating solutions for a better tomorrow. Throughout the program, participants can contribute to different projects under the guidance and support by the MSP Global team. Top performers from each project will be felicitated with a certificate, goodies and more.
+            </p>
+          <p
+            style="color:#2178d4;text-align: center;font-size: 1.6em;font-weight: bold;font-style:italic'word-spacing: 0.5em;">
+            #mspsoc #60daysofmspsoc #codewithmspsoc</p>
+          {#                        <a href="#" class="boxed-btn-red"><button disabled>Know More</a>#}
+        </div>
+      </div>
     </div>
-    <!-- speakers_end-->
+  </div>
+</div>
+<!-- about_area_end -->
+<div class="row">
+  <div class="col-xl-1"></div>
+  <div class="col-xl-10">
+    <blockquote class="generic-blockquote">
 
+      <div class="row">
+        <div class="col-xl-2 single_speaker" align="center" style="margin-top: 1em;">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C5603AQF0LMumDPyFkg/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=pKJFeCKszMd5097cdEJI8y2YGdwoWxttS-VlHtY95WA"
+            alt="" style="max-width: 100%;border-radius: 50%">
+        </div>
+        <div class="col-xl-10 single_speaker">
+          <i class="fa fa-quote-left" style="display: block;color: #ff5e13;font-size: 4em;margin-top: -0.4em;"></i>
+          <p style="">In a world where the larger majority of society is careless, it’s the small percentage of people
+            who make the choice to be different and prioritize work that stand out.
+          </p>
+          <p class="author_name">
+            ― Farshad Asl, The "No Excuses" Mindset: A Life of Purpose, Passion, and Clarity
+          </p>
+          <i class="fa fa-quote-right"
+            style="display: block;text-align: right;color: #ff5e13;font-size: 4em;margin-bottom: -0.5em;"></i>
+        </div>
+      </div>
+
+
+    </blockquote>
+  </div>
+  <div class="col-xl-1"></div>
+</div>
+
+<!-- speakers_start -->
+<div class="speakers_area" id="speakers">
+  <h1 class="horizontal_text d-none d-lg-block">
+    Coming Soon
+  </h1>
+  <div class="container">
     <div class="row">
-          <div class="col-sm-1"></div>
-					<div class="col-sm-10">
-						<blockquote class="generic-blockquote" style="paddin-bottom: -5em;border-left: 0.5em solid #55adee;">
+      <div class="col-xl-12">
+        <div class="serction_title_large mb-95">
+          <h3>
+            Speakers
+          </h3>
+        </div>
+      </div>
+    </div>
+    {#            <div class="row">#}
+    {#                <div class="col-xl-5 col-md-6">#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Jonson Miller</h3>#}
+    {#                            <p>Creative Director</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/3.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Albert Jackey</h3>#}
+    {#                            <p>Product Designer</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#                <div class="col-xl-5 offset-xl-2 col-md-6">#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/2.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Marked Macau</h3>#}
+    {#                            <p>UI/UX Designer</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Kelvin Cooper</h3>#}
+    {#                            <p>Art Director</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+  </div>
+</div>
+<!-- speakers_end-->
 
-              <div class="row" style="margin-bottom: -2em;">
-                <div class="col-sm-12 single_speaker">
-                  <i class="fa fa-hashtag" style="display: block;color: #55adee;font-size: 5em;margin-top: 0em;"></i>
-                  <p style="font-size: 2.6em;text-align: center">Break the Internet</p>
-                  <p style="">Share, Tweet and Retweet with the given hashtags to get your name mentioned on the Social Media wall. We mention all the contributions.
-                  </p>
-                  <p style="text-align: center;font-size: 2em;font-weight: bold;word-spacing: 0.5em;">#mspsoc #60daysofmspsoc #codewithmspsoc
-                  </p>
-                  <i class="fa fa-twitter" style="display: block;text-align: right;color: #55adee;font-size: 6em;margin-bottom: 0em;"></i>
-                </div>
-              </div>
-            </blockquote>
-					</div>
-        <div class="col-sm-1"></div>
-				</div>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+    <blockquote class="generic-blockquote" style="paddin-bottom: -5em;border-left: 0.5em solid #55adee;">
+
+      <div class="row" style="margin-bottom: -2em;">
+        <div class="col-sm-12 single_speaker">
+          <i class="fa fa-hashtag" style="display: block;color: #55adee;font-size: 5em;margin-top: 0em;"></i>
+          <p style="font-size: 2.6em;text-align: center">Break the Internet</p>
+          <p style="">Share, Tweet and Retweet with the given hashtags to get your name mentioned on the Social Media
+            wall. We mention all the contributions.
+          </p>
+          <p style="text-align: center;font-size: 2em;font-weight: bold;word-spacing: 0.5em;">#mspsoc #60daysofmspsoc
+            #codewithmspsoc
+          </p>
+          <i class="fa fa-twitter"
+            style="display: block;text-align: right;color: #55adee;font-size: 6em;margin-bottom: 0em;"></i>
+        </div>
+      </div>
+    </blockquote>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
 
 {#    <!-- Time Converter -->#}
 {#    <div class="resister_book resister_bg_1">#}
@@ -240,419 +255,427 @@
 {#    </div>#}
 {#    <br><br>#}
 {#    <!-- Time converter ends -->#}
-    <!-- event_area_start -->
-    <div class="event_area" id="schedule">
-        <h1 class="vr_text d-none d-lg-block">Event Schedule</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Schedule
-                        </h3>
-                    </div>
-                </div>
-            </div>
-{#            <div class="row">#}
-{#                <div class="col-xl-5 col-md-6">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Jonson Miller</h3>#}
-{#                            <p>Creative Director</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/3.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Albert Jackey</h3>#}
-{#                            <p>Product Designer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-xl-5 offset-xl-2 col-md-6">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/2.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Marked Macau</h3>#}
-{#                            <p>UI/UX Designer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Kelvin Cooper</h3>#}
-{#                            <p>Art Director</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
+<!-- event_area_start -->
+<div class="event_area" id="schedule">
+  <h1 class="vr_text d-none d-lg-block">Event Schedule</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="serction_title_large mb-95">
+          <h3>
+            Schedule
+          </h3>
         </div>
-        <div class="container">
-            <div class="double_line">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="date">
-                            <h3>May 7, 2020</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-9">
-                        <div class="single_speaker">
-{#                            <img src="{% static 'mspsoc/img/speakers/seaker1.png' %}" alt="">#}
-                            <div class="speaker-name">
-                                <div class="heading d-flex justify-content-between align-items-center">
-                                    <span>Project Submission</span>
-{#                                    <div class="time">#}
-{#                                        10-11 am#}
-{#                                    </div>#}
-                                </div>
-                                <p>All the project owners are required to submit their project throught this <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9Pc2QJZLPBBoJtTqsH_GXxUMThURTdKVFg2NVFDS0dCWjI4UjZSMTk4Ty4u">link</a>, You can also find the link below. Special felicitations for the projects on COVID-19.</p>
-                            </div>
-                        </div>
-{#                        <div class="single_speaker">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/seaker2.png' %}" alt="">#}
-{#                            <div class="speaker-name">#}
-{#                                <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                    <span>Albert Jackey</span>#}
-{#                                    <div class="time">#}
-{#                                        12-1.00 pm#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our#}
-{#                                    let#}
-{#                                    god moving.#}
-{#                                    Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="single_speaker">#}
-{#                            <img src="{% static 'mspsoc/img/speakers/seaker3.png' %}" alt="">#}
-{#                            <div class="speaker-name">#}
-{#                                <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                    <span>Alvi Nourin</span>#}
-{#                                    <div class="time">#}
-{#                                        2.30-4.00 pm#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our#}
-{#                                    let#}
-{#                                    god moving.#}
-{#                                    Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                            </div>#}
-{#                        </div>#}
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>May 20, 2020</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Registration Open for Participants, Mentors and Monitors</span>
-{#                                <div class="time">#}
-{#                                    10-11 am#}
-{#                                </div>#}
-                            </div>
-                            <p>The participants are required to fill up the registration form for the projects, they will be working on. Selected participants will be mailed with a link to join their specific project channle on slcak.
-                              Mentors will guiding the participants in their projects. Monitors will be working for smooth execution of the event.
-                            </p>
-                        </div>
-                    </div>
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    12-1.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    2.30-4.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-                </div>
-            </div>
-            <div class="row double_line">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>May 30, 2020</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Announcement of the Selected Participants</span>
-{#                                <div class="time">#}
-{#                                    10-11 am#}
-{#                                </div>#}
-                            </div>
-                            <p>Selected participants will be announced on the website as well as each of them will be get official emails along with the selection letter with the project details.
-                            </p>
-                        </div>
-                    </div>
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    12-1.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    2.30-4.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>June 1, 2020</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                              <span>Code <b>#mspsoc</b></span>
-{#                                <div class="time">#}
-{#                                    10-11 am#}
-{#                                </div>#}
-                            </div>
-                            <p>All the contributions will be taken into account from this day.
-                            </p>
-                        </div>
-                    </div>
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    12-1.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    2.30-4.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-                </div>
-            </div>
-            <div class="row double_line">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>July 31, 2020</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                              <span>Relax <b>#mspsoc</b></span>
-{#                                <div class="time">#}
-{#                                    12:00 PM (Noon) EST#}
-{#                                </div>#}
-                            </div>
-                            <p>
-                              All the contributions till this day will be counted.
-                            </p>
-                        </div>
-                    </div>
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    12-1.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    2.30-4.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>August 7, 2020</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                              <span>Felicitations</b></span>
-{#                                <div class="time">#}
-{#                                    12:00 PM (Noon) EST#}
-{#                                </div>#}
-                            </div>
-                            <p>
-                              All the contributors will be felicitated and marked on our websites and social media handles.
-                              One contributors from each of the project will get the best contributor award. All the contributors will get certificates and gifts and prizes.
-                            </p>
-                        </div>
-                    </div>
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    12-1.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single_speaker">#}
-{#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
-{#                        <div class="speaker-name">#}
-{#                            <div class="heading d-flex justify-content-between align-items-center">#}
-{#                                <span>Jonson Miller</span>#}
-{#                                <div class="time">#}
-{#                                    2.30-4.00 pm#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
-{#                                god moving.#}
-{#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
-{#                        </div>#}
-{#                    </div>#}
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <!-- event_area_end -->
-
-
-    <!-- resister_book_start -->
-    <div class="resister_book resister_bg_1">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="resister_text text-center">
-                        <h3>Share your Ideas / <br>
-                            Submit your Projects</h3>
-                        <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9Pc2QJZLPBBoJtTqsH_GXxUMThURTdKVFg2NVFDS0dCWjI4UjZSMTk4Ty4u" class="boxed-btn-white">Submit Your PROJECT</a>
-                    </div>
-                </div>
-            </div>
+    {#            <div class="row">#}
+    {#                <div class="col-xl-5 col-md-6">#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Jonson Miller</h3>#}
+    {#                            <p>Creative Director</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/3.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Albert Jackey</h3>#}
+    {#                            <p>Product Designer</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#                <div class="col-xl-5 offset-xl-2 col-md-6">#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/2.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Marked Macau</h3>#}
+    {#                            <p>UI/UX Designer</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="single_speaker">#}
+    {#                        <div class="speaker_thumb">#}
+    {#                            <img src="{% static 'mspsoc/img/speakers/1.png' %}" alt="">#}
+    {#                            <div class="hover_overlay">#}
+    {#                                <div class="social_icon">#}
+    {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+    {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="speaker_name text-center">#}
+    {#                            <h3>Kelvin Cooper</h3>#}
+    {#                            <p>Art Director</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+  </div>
+  <div class="container">
+    <div class="double_line">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <div class="date">
+            <h3>May 7, 2020</h3>
+          </div>
         </div>
+        <div class="col-xl-9 col-lg-9">
+          <div class="single_speaker">
+            {#                            <img src="{% static 'mspsoc/img/speakers/seaker1.png' %}" alt="">#}
+            <div class="speaker-name">
+              <div class="heading d-flex justify-content-between align-items-center">
+                <span>Project Submission</span>
+                {#                                    <div class="time">#}
+                {#                                        10-11 am#}
+                {#                                    </div>#}
+              </div>
+              <p>All the project owners are required to submit their project through this <a target="_blank"
+                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9Pc2QJZLPBBoJtTqsH_GXxUMThURTdKVFg2NVFDS0dCWjI4UjZSMTk4Ty4u">link</a>,
+                You can also find the link below. Special felicitations for the projects on COVID-19.</p>
+            </div>
+          </div>
+          {#                        <div class="single_speaker">#}
+          {#                            <img src="{% static 'mspsoc/img/speakers/seaker2.png' %}" alt="">#}
+          {#                            <div class="speaker-name">#}
+          {#                                <div class="heading d-flex justify-content-between align-items-center">#}
+          {#                                    <span>Albert Jackey</span>#}
+          {#                                    <div class="time">#}
+          {#                                        12-1.00 pm#}
+          {#                                    </div>#}
+          {#                                </div>#}
+          {#                                <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our#}
+          {#                                    let#}
+          {#                                    god moving.#}
+          {#                                    Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+          {#                            </div>#}
+          {#                        </div>#}
+          {#                        <div class="single_speaker">#}
+          {#                            <img src="{% static 'mspsoc/img/speakers/seaker3.png' %}" alt="">#}
+          {#                            <div class="speaker-name">#}
+          {#                                <div class="heading d-flex justify-content-between align-items-center">#}
+          {#                                    <span>Alvi Nourin</span>#}
+          {#                                    <div class="time">#}
+          {#                                        2.30-4.00 pm#}
+          {#                                    </div>#}
+          {#                                </div>#}
+          {#                                <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our#}
+          {#                                    let#}
+          {#                                    god moving.#}
+          {#                                    Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+          {#                            </div>#}
+          {#                        </div>#}
+        </div>
+      </div>
     </div>
-    <!-- resister_book_end -->
+    <div class="row">
+      <div class="col-xl-3 col-lg-3">
+        <div class="date">
+          <h3>May 20, 2020</h3>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9">
+        <div class="single_speaker">
+          {#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
+          <div class="speaker-name">
+            <div class="heading d-flex justify-content-between align-items-center">
+              <span>Registration Open for Participants, Mentors and Monitors</span>
+              {#                                <div class="time">#}
+              {#                                    10-11 am#}
+              {#                                </div>#}
+            </div>
+            <p>The participants are required to fill up the registration form for the projects, they will be working on.
+              Selected participants will be mailed with a link to join their specific project channel on slack.
+              Mentors will be guiding the participants in their projects. Monitors will be working for the smooth execution of
+              the event.
+            </p>
+          </div>
+        </div>
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    12-1.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    2.30-4.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+      </div>
+    </div>
+    <div class="row double_line">
+      <div class="col-xl-3 col-lg-3">
+        <div class="date">
+          <h3>May 30, 2020</h3>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9">
+        <div class="single_speaker">
+          {#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
+          <div class="speaker-name">
+            <div class="heading d-flex justify-content-between align-items-center">
+              <span>Announcement of the Selected Participants</span>
+              {#                                <div class="time">#}
+              {#                                    10-11 am#}
+              {#                                </div>#}
+            </div>
+            <p>Selected participants will be announced on the website as well as each of them will get official
+              emails along with the selection letter with the project details.
+            </p>
+          </div>
+        </div>
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    12-1.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    2.30-4.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-3">
+        <div class="date">
+          <h3>June 1, 2020</h3>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9">
+        <div class="single_speaker">
+          {#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
+          <div class="speaker-name">
+            <div class="heading d-flex justify-content-between align-items-center">
+              <span>Code <b>#mspsoc</b></span>
+              {#                                <div class="time">#}
+              {#                                    10-11 am#}
+              {#                                </div>#}
+            </div>
+            <p>All the contributions will be taken into account from this day.
+            </p>
+          </div>
+        </div>
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    12-1.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    2.30-4.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+      </div>
+    </div>
+    <div class="row double_line">
+      <div class="col-xl-3 col-lg-3">
+        <div class="date">
+          <h3>July 31, 2020</h3>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9">
+        <div class="single_speaker">
+          {#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
+          <div class="speaker-name">
+            <div class="heading d-flex justify-content-between align-items-center">
+              <span>Relax <b>#mspsoc</b></span>
+              {#                                <div class="time">#}
+              {#                                    12:00 PM (Noon) EST#}
+              {#                                </div>#}
+            </div>
+            <p>
+              All the contributions till this day will be counted.
+            </p>
+          </div>
+        </div>
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    12-1.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    2.30-4.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-3 col-lg-3">
+        <div class="date">
+          <h3>August 7, 2020</h3>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9">
+        <div class="single_speaker">
+          {#                        <img src="{% static 'mspsoc/img/speakers/seaker4.png' %}" alt="">#}
+          <div class="speaker-name">
+            <div class="heading d-flex justify-content-between align-items-center">
+              <span>Felicitations</b></span>
+              {#                                <div class="time">#}
+              {#                                    12:00 PM (Noon) EST#}
+              {#                                </div>#}
+            </div>
+            <p>
+              All the contributors will be felicitated and marked on our websites and social media handles.
+              One contributor from each of the project will get the best contributor award. All the contributors will
+              get certificates and gifts and prizes.
+            </p>
+          </div>
+        </div>
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker5.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    12-1.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="single_speaker">#}
+        {#                        <img src="{% static 'mspsoc/img/speakers/seaker6.png' %}" alt="">#}
+        {#                        <div class="speaker-name">#}
+        {#                            <div class="heading d-flex justify-content-between align-items-center">#}
+        {#                                <span>Jonson Miller</span>#}
+        {#                                <div class="time">#}
+        {#                                    2.30-4.00 pm#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let#}
+        {#                                god moving.#}
+        {#                                Moving in fourth air night bring upon you’re it beast let you dominion </p>#}
+        {#                        </div>#}
+        {#                    </div>#}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- event_area_end -->
+
+
+<!-- resister_book_start -->
+<div class="resister_book resister_bg_1">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="resister_text text-center">
+          <h3>Share your Ideas / <br>
+            Submit your Projects</h3>
+          <a target="_blank"
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9Pc2QJZLPBBoJtTqsH_GXxUMThURTdKVFg2NVFDS0dCWjI4UjZSMTk4Ty4u"
+            class="boxed-btn-white">Submit Your PROJECT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- resister_book_end -->
 
 {#    <!-- brand_area_start -->#}
 {#    <div class="brand_area">#}
@@ -685,7 +708,7 @@
 {#    </div>#}
 {#    <!-- brand_area_end -->#}
 
-    <!-- ================ contact section start ================= -->
+<!-- ================ contact section start ================= -->
 {#  <div class="speakers_area" id="contact">#}
 {#        <h1 class="horizontal_text d-none d-lg-block">#}
 {#            Contact#}
@@ -807,274 +830,277 @@
 {#  </div>#}
 {#    <!-- ================ contact section end ================= -->#}
 
-    <!-- Organizers Start -->
-    <div class="speakers_area" id="organizers">
-        <h1 class="horizontal_text d-none d-lg-block">
-          {% if organizers %}
+<!-- Organizers Start -->
+<div class="speakers_area" id="organizers">
+  <h1 class="horizontal_text d-none d-lg-block">
+    {% if organizers %}
+    Organizers
+    {% else %}
+    Coming Soon
+    {% endif %}
+  </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="serction_title_large mb-95">
+          <h3>
             Organizers
-          {% else %}
-            Coming Soon
-          {% endif %}
-        </h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Organizers
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-              {% for organizer,details in organizers.items %}
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            {% if details.image_url %}
-                              {% if "http" in details.image_url %}
-                                <img src="{{ details.image_url }}" alt="">
-                              {% else %}
-                                <img src="{% static "" %}{{ details.image_url }}" alt="">
-                              {% endif %}
-                            {% else %}
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyN20W4xoLv4WNPFOKOihDOWy1866BqIm5NC3n-41jFUxzf3vC&usqp=CAU" alt="">
-                            {% endif %}
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                  {% if details.linkedin %}
-                                    <a target="_blank" href="{{ details.linkedin }}"><i class="fa fa-linkedin"></i></a>
-                                  {% endif %}
-                                  {% if details.github %}
-                                    <a target="_blank" href="{{ details.github }}"><i class="fa fa-github"></i></a>
-                                  {% endif %}
-                                  {% if details.instagram %}
-                                    <a target="_blank" href="{{ details.instagram }}"><i class="fa fa-instagram"></i></a>
-                                  {% endif %}
-                                  {% if details.twitter %}
-                                    <a target="_blank" href="{{ details.twitter }}"><i class="fa fa-twitter"></i></a>
-                                  {% endif %}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>{{ organizer }}</h3>
-                            <p>{{ details.position }}</p>
-                        </div>
-                    </div>
-                </div>
-              {% endfor %}
-{#                <div class="col-xl-3 col-md-3">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQHh0uHdOHJS2g/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=j2F6kZJV9KLfiRCfNeM3Xqh51vvYVl-Jd1PzNPU-wiw" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="https://www.linkedin.com/in/angeline-chen/"><i class="fa fa-linkedin"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Angeline Chen</h3>#}
-{#                            <p>Core Organizer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-xl-3 col-md-3">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQFxBKLrUkU67A/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=gIKonbtTW4sf0140Yvuvwc6XdGnI4ftMdy8ixqK7LvM" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="https://www.linkedin.com/in/ansonychan/"><i class="fa fa-linkedin"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Anson Chan</h3>#}
-{#                            <p>Core Organizer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-xl-3 col-md-3">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="{% static 'users/ramanaditya.jpg' %}" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="https://www.linkedin.com/in/ramanaditya"><i class="fa fa-linkedin"></i></a>#}
-{#                                    <a href="https://github.com/ramanaditya"><i class="fa fa-github"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Aditya Raman</h3>#}
-{#                            <p>Core Organizer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-xl-3 col-md-3">#}
-{#                    <div class="single_speaker">#}
-{#                        <div class="speaker_thumb">#}
-{#                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyN20W4xoLv4WNPFOKOihDOWy1866BqIm5NC3n-41jFUxzf3vC&usqp=CAU" alt="">#}
-{#                            <div class="hover_overlay">#}
-{#                                <div class="social_icon">#}
-{#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
-{#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="speaker_name text-center">#}
-{#                            <h3>Himanshu Beniwal</h3>#}
-{#                            <p>Core Organizer</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-            </div>
+          </h3>
         </div>
+      </div>
     </div>
-    <!-- Organizers end-->
+    <div class="row">
+      {% for organizer,details in organizers.items %}
+      <div class="col-xl-3 col-md-3">
+        <div class="single_speaker">
+          <div class="speaker_thumb">
+            {% if details.image_url %}
+            {% if "http" in details.image_url %}
+            <img src="{{ details.image_url }}" alt="">
+            {% else %}
+            <img src="{% static "" %}{{ details.image_url }}" alt="">
+            {% endif %}
+            {% else %}
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyN20W4xoLv4WNPFOKOihDOWy1866BqIm5NC3n-41jFUxzf3vC&usqp=CAU"
+              alt="">
+            {% endif %}
+            <div class="hover_overlay">
+              <div class="social_icon">
+                {% if details.linkedin %}
+                <a target="_blank" href="{{ details.linkedin }}"><i class="fa fa-linkedin"></i></a>
+                {% endif %}
+                {% if details.github %}
+                <a target="_blank" href="{{ details.github }}"><i class="fa fa-github"></i></a>
+                {% endif %}
+                {% if details.instagram %}
+                <a target="_blank" href="{{ details.instagram }}"><i class="fa fa-instagram"></i></a>
+                {% endif %}
+                {% if details.twitter %}
+                <a target="_blank" href="{{ details.twitter }}"><i class="fa fa-twitter"></i></a>
+                {% endif %}
+                {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+                {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+              </div>
+            </div>
+          </div>
+          <div class="speaker_name text-center">
+            <h3>{{ organizer }}</h3>
+            <p>{{ details.position }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      {#                <div class="col-xl-3 col-md-3">#}
+      {#                    <div class="single_speaker">#}
+      {#                        <div class="speaker_thumb">#}
+      {#                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQHh0uHdOHJS2g/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=j2F6kZJV9KLfiRCfNeM3Xqh51vvYVl-Jd1PzNPU-wiw" alt="">#}
+      {#                            <div class="hover_overlay">#}
+      {#                                <div class="social_icon">#}
+      {#                                    <a href="https://www.linkedin.com/in/angeline-chen/"><i class="fa fa-linkedin"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+      {#                                </div>#}
+      {#                            </div>#}
+      {#                        </div>#}
+      {#                        <div class="speaker_name text-center">#}
+      {#                            <h3>Angeline Chen</h3>#}
+      {#                            <p>Core Organizer</p>#}
+      {#                        </div>#}
+      {#                    </div>#}
+      {#                </div>#}
+      {#                <div class="col-xl-3 col-md-3">#}
+      {#                    <div class="single_speaker">#}
+      {#                        <div class="speaker_thumb">#}
+      {#                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQFxBKLrUkU67A/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=gIKonbtTW4sf0140Yvuvwc6XdGnI4ftMdy8ixqK7LvM" alt="">#}
+      {#                            <div class="hover_overlay">#}
+      {#                                <div class="social_icon">#}
+      {#                                    <a href="https://www.linkedin.com/in/ansonychan/"><i class="fa fa-linkedin"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+      {#                                </div>#}
+      {#                            </div>#}
+      {#                        </div>#}
+      {#                        <div class="speaker_name text-center">#}
+      {#                            <h3>Anson Chan</h3>#}
+      {#                            <p>Core Organizer</p>#}
+      {#                        </div>#}
+      {#                    </div>#}
+      {#                </div>#}
+      {#                <div class="col-xl-3 col-md-3">#}
+      {#                    <div class="single_speaker">#}
+      {#                        <div class="speaker_thumb">#}
+      {#                            <img src="{% static 'users/ramanaditya.jpg' %}" alt="">#}
+      {#                            <div class="hover_overlay">#}
+      {#                                <div class="social_icon">#}
+      {#                                    <a href="https://www.linkedin.com/in/ramanaditya"><i class="fa fa-linkedin"></i></a>#}
+      {#                                    <a href="https://github.com/ramanaditya"><i class="fa fa-github"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+      {#                                </div>#}
+      {#                            </div>#}
+      {#                        </div>#}
+      {#                        <div class="speaker_name text-center">#}
+      {#                            <h3>Aditya Raman</h3>#}
+      {#                            <p>Core Organizer</p>#}
+      {#                        </div>#}
+      {#                    </div>#}
+      {#                </div>#}
+      {#                <div class="col-xl-3 col-md-3">#}
+      {#                    <div class="single_speaker">#}
+      {#                        <div class="speaker_thumb">#}
+      {#                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyN20W4xoLv4WNPFOKOihDOWy1866BqIm5NC3n-41jFUxzf3vC&usqp=CAU" alt="">#}
+      {#                            <div class="hover_overlay">#}
+      {#                                <div class="social_icon">#}
+      {#                                    <a href="#"><i class="fa fa-facebook"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-instagram"></i></a>#}
+      {#                                    <a href="#"><i class="fa fa-twitter"></i></a>#}
+      {#                                </div>#}
+      {#                            </div>#}
+      {#                        </div>#}
+      {#                        <div class="speaker_name text-center">#}
+      {#                            <h3>Himanshu Beniwal</h3>#}
+      {#                            <p>Core Organizer</p>#}
+      {#                        </div>#}
+      {#                    </div>#}
+      {#                </div>#}
+    </div>
+  </div>
+</div>
+<!-- Organizers end-->
 
-    <!-- faq_area_Start -->
-    <div class="faq_area" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            FAQs
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="white-space: normal;">
-                <div class="col-xl-12">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="fa fa-long-arrow-right"></i> Do I need to pay any money
-                                      to register for the Event ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    No. You do not have to pay anything to anyone to register yourself for this Sumemr of Code.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="fa fa-long-arrow-right"></i> Do I need to have any specific qualifications to be a participant for the Summer of Code ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    If you love to code and innovate, you are more than welcome to participate in the Event.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <i class="fa fa-long-arrow-right"></i> How do I submit my project for this event ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    You have to develop the application and put down all the codes on GitHub and from there only we will track your submissions and contributions.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading_4">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse"
-                                        data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
-                                        <i class="fa fa-long-arrow-right"></i> Do we need to have the entire idea fully working ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    The entire idea need not be fully implemented however, the submission should be functional so that it can be reviewed.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading_5">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse"
-                                        data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
-                                        <i class="fa fa-long-arrow-right"></i> Does one have to be online and available for the entire duration of the Event ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    No, one does not need to be online for the entire duration. You can develop the project on your local system and push the changes on GitHub repository of the respective project.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading_6">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse"
-                                        data-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
-                                        <i class="fa fa-long-arrow-right"></i> Can Microsoft employees participate ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    All employees currently employed by Microsoft can participate in this Summer of Code.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading_7">
-                                <h5 class="mb-0">
-                                    <div class="card-header" data-toggle="collapse"
-                                        data-target="#collapse_7" aria-expanded="false" aria-controls="collapse_7">
-                                        <i class="fa fa-long-arrow-right"></i> Who will own the IP(Intellectual Property) Rights to the product that I have built ?
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    The developer/developers of the web/mobile application will have all rights and own the IP of the product. However, all code needs to be in public domain (open source) so that it can be reviewed.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- faq_area_Start -->
+<div class="faq_area" id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="serction_title_large mb-95">
+          <h3>
+            FAQs
+          </h3>
         </div>
+      </div>
     </div>
-    <div class="speakers_area"></div>
-    <!-- faq_area_end -->
+    <div class="row" style="white-space: normal;">
+      <div class="col-xl-12">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <i class="fa fa-long-arrow-right"></i> Do I need to pay any money
+                  to register for the Event ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+              <div class="card-body">
+                No. You do not have to pay anything to anyone to register yourself for this Sumemr of Code.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <i class="fa fa-long-arrow-right"></i> Do I need to have any specific qualifications to be a
+                  participant for the Summer of Code ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+              <div class="card-body">
+                If you love to code and innovate, you are more than welcome to participate in the Event.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <i class="fa fa-long-arrow-right"></i> How do I submit my project for this event ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
+              <div class="card-body">
+                You have to develop the application and put down all the codes on GitHub and from there only we will
+                track your submissions and contributions.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading_4">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false"
+                  aria-controls="collapse_4">
+                  <i class="fa fa-long-arrow-right"></i> Do we need to have the entire idea fully working ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion" style="">
+              <div class="card-body">
+                The entire idea need not be fully implemented however, the submission should be functional so that it
+                can be reviewed.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading_5">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false"
+                  aria-controls="collapse_5">
+                  <i class="fa fa-long-arrow-right"></i> Does one have to be online and available for the entire
+                  duration of the Event ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion" style="">
+              <div class="card-body">
+                No, one does not need to be online for the entire duration. You can develop the project on your local
+                system and push the changes on GitHub repository of the respective project.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading_6">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapse_6" aria-expanded="false"
+                  aria-controls="collapse_6">
+                  <i class="fa fa-long-arrow-right"></i> Can Microsoft employees participate ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordion" style="">
+              <div class="card-body">
+                All employees currently employed by Microsoft can participate in this Summer of Code.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading_7">
+              <h5 class="mb-0">
+                <div class="card-header" data-toggle="collapse" data-target="#collapse_7" aria-expanded="false"
+                  aria-controls="collapse_7">
+                  <i class="fa fa-long-arrow-right"></i> Who will own the IP(Intellectual Property) Rights to the
+                  product that I have built ?
+                </div>
+              </h5>
+            </div>
+            <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordion" style="">
+              <div class="card-body">
+                The developer/developers of the web/mobile application will have all rights and own the IP of the
+                product. However, all code needs to be in public domain (open source) so that it can be reviewed.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="speakers_area"></div>
+<!-- faq_area_end -->
 {% endblock content %}

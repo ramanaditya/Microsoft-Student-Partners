@@ -59,6 +59,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden !important;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
@@ -6098,4 +6099,16 @@ h6 {
 	.profile-card-ctr {
 		flex-wrap: wrap;
 	}
+}
+
+.twitter_profile{
+  border-radius: 50%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .twitter_profile{
+    border-radius: 50%;
+    width: 70% !important;
+  }
 }
