@@ -3,174 +3,202 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MSPSoC-Social</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MSPSoC-Social</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-{#    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicons/favicon.ico' %}">#}
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}">
-    <!-- Place favicon.ico in the root directory -->
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Microsoft Student Partners Summer of Code 2020">
+  <meta name="description"
+    content="MSP Summer Of Code (MSPSoC) is a 2 month long Open Source program with an aim to help beginners get started with Open Source Development while creating solutions for a better tomorrow. Throughout the program, participants can contribute to different projects under the guidance and support of mentors. Top performers from each project will be felicitated with a certificate, goodies and much more.">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="{% static 'mspsoc/css/bootstrap.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/owl.carousel.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/magnific-popup.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/font-awesome.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/themify-icons.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/nice-select.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/flaticon.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/animate.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/slicknav.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'mspsoc/css/style.css' %}?{% now 'U' %}">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mspglobal.azurewebsites.net/mspsoc/">
+  <meta property="og:title" content="Microsoft Student Partners Summer of Code 2020">
+  <meta property="og:description"
+    content="MSP Summer Of Code (MSPSoC) is a 2 month long Open Source program with an aim to help beginners get started with Open Source Development while creating solutions for a better tomorrow. Throughout the program, participants can contribute to different projects under the guidance and support of mentors. Top performers from each project will be felicitated with a certificate, goodies and much more.">
+  <meta property="og:image"
+    content="https://mspglobal.azurewebsites.net/static/microsoft/Visual%20ID%20and%20Logo/Code%20is%20Life%20Shield%20Logo/Blue/RGB/MSP_Shield_logo_RGB_Blue.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mspglobal.azurewebsites.net/mspsoc/">
+  <meta property="twitter:title" content="Microsoft Student Partners Summer of Code 2020">
+  <meta property="twitter:description"
+    content="MSP Summer Of Code (MSPSoC) is a 2 month long Open Source program with an aim to help beginners get started with Open Source Development while creating solutions for a better tomorrow. Throughout the program, participants can contribute to different projects under the guidance and support of mentors. Top performers from each project will be felicitated with a certificate, goodies and much more.">
+  <meta property="twitter:image"
+    content="https://mspglobal.azurewebsites.net/static/microsoft/Visual%20ID%20and%20Logo/Code%20is%20Life%20Shield%20Logo/Blue/RGB/MSP_Shield_logo_RGB_Blue.png">
+
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  {#    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicons/favicon.ico' %}">#}
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="{% static 'mspsoc/css/bootstrap.min.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/owl.carousel.min.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/magnific-popup.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/font-awesome.min.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/themify-icons.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/nice-select.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/flaticon.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/animate.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/slicknav.css' %}?{% now 'U' %}">
+  <link rel="stylesheet" href="{% static 'mspsoc/css/style.css' %}?{% now 'U' %}">
+  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <!-- header-start -->
-    {% include 'mspsoc/header.html' %}
-    <!-- header-end -->
+  <!-- header-start -->
+  {% include 'mspsoc/header.html' %}
+  <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area slider_bg_1">
-        <div class="slider_text">
-{#            <div class="container">#}
-{#                <div class="position_relv">#}
-{#                    <div class="row col-xl-8 title_text title_text2">#}
-{#                        <h3 class="">Projects</h3>#}
-{#                        <div class="col-xl-8">#}
-{#                            <div class="title_text title_text2 ">#}
-{#                                <h3>Projects</h3>#}
-{#                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-        </div>
-{#        <div class="countDOwn_area">#}
-{#            <div class="container">#}
-{#                <div class="row align-items-center">#}
-{#                    <div class="col-xl-4 col-md-6 col-lg-4">#}
-{#                        <div class="single_date">#}
-{#                            <i class="ti-location-pin"></i>#}
-{#                            <span>City Hall, New York City</span>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-xl-3 col-md-6 col-lg-3">#}
-{#                        <div class="single_date">#}
-{#                            <i class="ti-alarm-clock"></i>#}
-{#                            <span>12-15 Sep 2019</span>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-xl-5 col-md-12 col-lg-5">#}
-{#                        <span id="clock"></span>#}
-{#                    </div>#}
-{##}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
+  <!-- slider_area_start -->
+  <div class="slider_area slider_bg_1">
+    <div class="slider_text">
+      {#            <div class="container">#}
+      {#                <div class="position_relv">#}
+      {#                    <div class="row col-xl-8 title_text title_text2">#}
+      {#                        <h3 class="">Projects</h3>#}
+      {#                        <div class="col-xl-8">#}
+      {#                            <div class="title_text title_text2 ">#}
+      {#                                <h3>Projects</h3>#}
+      {#                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>#}
+      {#                            </div>#}
+      {#                        </div>#}
+      {#                    </div>#}
+      {#                </div>#}
+      {#            </div>#}
     </div>
-    <!-- slider_area_end -->
+    {#        <div class="countDOwn_area">#}
+    {#            <div class="container">#}
+    {#                <div class="row align-items-center">#}
+    {#                    <div class="col-xl-4 col-md-6 col-lg-4">#}
+    {#                        <div class="single_date">#}
+    {#                            <i class="ti-location-pin"></i>#}
+    {#                            <span>City Hall, New York City</span>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="col-xl-3 col-md-6 col-lg-3">#}
+    {#                        <div class="single_date">#}
+    {#                            <i class="ti-alarm-clock"></i>#}
+    {#                            <span>12-15 Sep 2019</span>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="col-xl-5 col-md-12 col-lg-5">#}
+    {#                        <span id="clock"></span>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+  </div>
+  <!-- slider_area_end -->
 
 
-    <!--================Blog Area =================-->
-    <!-- Organizers Start -->
-    <div class="speakers_area" id="projects">
-        <h1 class="horizontal_text d-none d-lg-block">
-          Social Media
-        </h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Social Media
-                        </h3>
-                    </div>
-                </div>
-            </div>
+  <!--================Blog Area =================-->
+  <!-- Organizers Start -->
+  <div class="speakers_area" id="projects">
+    <h1 class="horizontal_text d-none d-lg-block">
+      Social Media
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="serction_title_large mb-95">
+            <h3>
+              Social Media
+            </h3>
+          </div>
         </div>
+      </div>
+    </div>
 
     <!-- Define Hash Tags -->
-      <div class="row">
-          <div class="col-sm-1"></div>
-					<div class="col-sm-10">
-						<blockquote class="generic-blockquote" style="paddin-bottom: -5em;border-left: 0.5em solid #55adee;">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <blockquote class="generic-blockquote" style="padding-bottom: -5em;border-left: 0.5em solid #55adee;">
 
-              <div class="row" style="margin-bottom: -2em;">
-                <div class="col-sm-12 single_speaker">
-                  <i class="fa fa-hashtag" style="display: block;color: #55adee;font-size: 5em;margin-top: 0em;"></i>
-                  <p style="font-size: 2.6em;text-align: center">Break the Internet</p>
-                  <p style="">Share, Tweet and Retweet with the given hashtags to get your name mentioned on the Social Media wall. We mention all the contributions.
-                  </p>
-                  <p style="text-align: center;font-size: 2em;font-weight: bold;word-spacing: 0.5em;">#mspsoc #60daysofmspsoc #codewithmspsoc
-                  </p>
-                  <i class="fa fa-twitter" style="display: block;text-align: right;color: #55adee;font-size: 6em;margin-bottom: 0em;"></i>
-                </div>
-              </div>
-            </blockquote>
-					</div>
-        <div class="col-sm-1"></div>
-				</div>
+          <div class="row" style="margin-bottom: -2em;">
+            <div class="col-sm-12 single_speaker">
+              <i class="fa fa-hashtag" style="display: block;color: #55adee;font-size: 5em;margin-top: 0em;"></i>
+              <p style="font-size: 2.6em;text-align: center">Break the Internet</p>
+              <p>Share, Tweet and Retweet with the given hashtags to get your name mentioned on the Social Media wall.
+                We mention all the contributions.
+              </p>
+              <p style="text-align: center;font-size: 2em;font-weight: bold;word-spacing: 0.5em;">#mspsoc
+                #60daysofmspsoc #codewithmspsoc
+              </p>
+              <i class="fa fa-twitter"
+                style="display: block;text-align: right;color: #55adee;font-size: 6em;margin-bottom: 0em;"></i>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
     <!-- -->
 
     <!--Twitter Area -->
-      <div class="row" style="margin-top: 1em;">
-          <div class="col-sm-1"></div>
-					<div class="col-sm-10">
-              <div class="row">
-                {% for tweets in context.twitter %}
-                <div class="col-sm-2 single_speaker" align="center" style="margin-top: 0em;">
-                  <a target="_blank" href="https://twitter.com/{{ tweets.username }}"> <img src="{{ tweets.image }}" alt="" style="border-radius: 50%;width: 100%"></a>
-                </div>
-                {% endfor %}
-              </div>
-					</div>
-        <div class="col-sm-1"></div>
-				</div>
-    <!--Twitter Area Closed-->
+    <div class="row" style="margin-top: 1em;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          {% for tweets in context.twitter %}
+          <div class="col-sm-2 single_speaker" align="center" style="margin-top: 0em;">
+            <a target="_blank" href="https://twitter.com/{{ tweets.username }}"> <img src="{{ tweets.image }}" alt="" class="twitter_profile"
+                ></a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
     </div>
-    <!--================Blog Area =================-->
+    <!--Twitter Area Closed-->
+  </div>
+  <!--================Blog Area =================-->
 
-    {% include 'mspsoc/footer.html' %}
-    <!-- JS here -->
-    <script src="{% static 'mspsoc/js/vendor/modernizr-3.5.0.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/vendor/jquery-1.12.4.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/popper.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/isotope.pkgd.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/ajax-form.js' %}"></script>
-    <script src="{% static 'mspsoc/js/waypoints.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.counterup.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/imagesloaded.pkgd.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/scrollIt.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.scrollUp.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/wow.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/nice-select.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.slicknav.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.countdown.js' %}"></script>
-    <script src="{% static 'mspsoc/js/plugins.js' %}"></script>
+  {% include 'mspsoc/footer.html' %}
+  <!-- JS here -->
+  <script src="{% static 'mspsoc/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/vendor/jquery-1.12.4.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/popper.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/ajax-form.js' %}"></script>
+  <script src="{% static 'mspsoc/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/scrollIt.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.scrollUp.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/wow.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/nice-select.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.slicknav.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.countdown.js' %}"></script>
+  <script src="{% static 'mspsoc/js/plugins.js' %}"></script>
 
-    <!--contact js-->
-    <script src="{% static 'mspsoc/js/contact.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.ajaxchimp.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.form.js' %}"></script>
-    <script src="{% static 'mspsoc/js/jquery.validate.min.js' %}"></script>
-    <script src="{% static 'mspsoc/js/mail-script.js' %}"></script>
+  <!--contact js-->
+  <script src="{% static 'mspsoc/js/contact.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.ajaxchimp.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.form.js' %}"></script>
+  <script src="{% static 'mspsoc/js/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'mspsoc/js/mail-script.js' %}"></script>
 
-    <script src="{% static 'mspsoc/js/main.js' %}"></script>
-    {% include 'mspsoc/twitter_analytics.html' %}
+  <script src="{% static 'mspsoc/js/main.js' %}"></script>
+  {% include 'mspsoc/twitter_analytics.html' %}
 </body>
+
 </html>
