@@ -1,87 +1,105 @@
 {% load static %}
 <!-- footer_start -->
-    <footer class="footer footer_bg_1">
-        <div class="circle_ball d-none d-lg-block">
-            <a href="#top"><img src="https://storage.needpix.com/rsynced_images/arrow-975992_1280.png" alt="" style="max-width: 13%;"></a>
+<footer class="footer footer_bg_1">
+  <div class="circle_ball d-none d-lg-block">
+    <a href="#top"><img src="https://storage.needpix.com/rsynced_images/arrow-975992_1280.png" alt=""
+        style="max-width: 13%;"></a>
+  </div>
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-md-3 col-lg-3">
+          <div class="footer_widget">
+            <h3 class="footer_title">
+              Links
+            </h3>
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li><a href="#organizers">Organizers</a></li>
+              <li><a href="{% url 'mspsoc:project' %}">Projects</a></li>
+              <li><a href="{% url 'mspsoc:social' %}">Social Media</a></li>
+              <li><a href="#faq">FAQs</a></li>
+            </ul>
+          </div>
         </div>
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-3 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                        Links
-                                </h3>
-                                <ul>
-                                    <li><a href="#top">Home</a></li>
-                                    <li><a href="#schedule">Schedule</a></li>
-                                    <li><a href="#speakers">Speakers</a></li>
-                                    <li><a href="#organizers">Organizers</a></li>
-                                    <li><a href="{% url 'mspsoc:project' %}">Projects</a></li>
-{#                                    <li><a href="{% url 'certificates:home' %}">Certificates</a></li>#}
-                                    <li><a href="#faq">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                        Social Media
-                                </h3>
-                                <ul>
-                                    <li><a target="_blank" href="https://github.com/ramanaditya/Microsoft-Student-Partnersf">GitHub</a></li>
-                                    <li><a target="_blank" href="https://twitter.com/mspsocf">Twitter</a></li>
-                                    <li><a target="_blank" href="https://www.linkedin.com/company/mspsoc/">LinkedIn</a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/mspsoc/">Instagram</a></li>
-                                    <li><a target="_blank" href="https://join.slack.com/t/microsoftstud-eyh2026/shared_invite/zt-dw31rcph-mWc2a94nGm6DKt_N7nUJPQ">Slack</a></li>
-                                </ul>
+        <div class="col-xl-3 col-md-3 col-lg-3">
+          <div class="footer_widget">
+            <h3 class="footer_title">
+              Social Media
+            </h3>
+            <ul>
+              <li><a target="_blank" href="https://github.com/ramanaditya/Microsoft-Student-Partners">GitHub</a></li>
+              <li><a target="_blank" href="https://twitter.com/mspsoc/">Twitter</a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/company/mspsoc/">LinkedIn</a></li>
+              <li><a target="_blank" href="https://www.instagram.com/mspsoc/">Instagram</a></li>
+              <li><a target="_blank"
+                  href="https://join.slack.com/t/microsoftstud-eyh2026/shared_invite/zt-dw31rcph-mWc2a94nGm6DKt_N7nUJPQ">Slack</a>
+              </li>
+            </ul>
 
-                            </div>
-                        </div>
-                      <div class="col-xl-6 col-md-6 col-lg-6" style="text-align: justify">
-                            <div class="footer_widget">
-                                <h4 class="footer_title">
-                                        <img src="{% static 'microsoft/Visual ID and Logo/Student Partner Visual ID/Blue_White/CMYK/1Line/MSP_visual-ID_CMYK_1line_blue_white.png' %}" alt="" style="width: 100%;">
-                                </h4>
-                                <p>
-                                    MSP Summer Of Code (MSPSoC) is a 2 month long Open Source program    with an aim to help beginners get started with Open Source Development while creating solutions for a better tomorrow. Throughout the program, participants can contribute to different projects under the guidance and support of Mentors. Top performers from each project will be felicitated with a certificate, goodies and much more.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lg-6" style="text-align: justify">
+          <div class="footer_widget">
+            <h4 class="footer_title">
+              <img
+                src="{% static 'microsoft/Visual ID and Logo/Student Partner Visual ID/Blue_White/CMYK/1Line/MSP_visual-ID_CMYK_1line_blue_white.png' %}"
+                alt="" style="width: 100%;">
+            </h4>
+            <p style="line-height: 200%; word-spacing: 3px;">
+              MSP Summer Of Code (MSPSoC) is a 2 month long Open Source program with an aim to help beginners get
+              started with Open Source Development while creating solutions for a better tomorrow. Throughout the
+              program, participants can contribute to different projects under the guidance and support of mentors. Top
+              performers from each project will be felicitated with a certificate, goodies and much more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-right_text">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <p class="copy_right text-center">
+            <div class="rounded-social-buttons">
+              <a class="social-button github" href="https://github.com/ramanaditya/Microsoft-Student-Partners"
+                target="_blank"><i class="fa fa-github"></i></a>
+              <a class="social-button twitter" href="https://twitter.com/mspsoc" target="_blank"><i
+                  class="fa fa-twitter"></i></a>
+              <a class="social-button linkedin" href="https://www.linkedin.com/company/mspsoc/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a>
+              <a class="social-button instagram" href="https://www.instagram.com/mspsoc/" target="_blank"><i
+                  class="fa fa-instagram"></i></a>
+              <a class="social-button slack"
+                href="https://join.slack.com/t/microsoftstud-eyh2026/shared_invite/zt-dw31rcph-mWc2a94nGm6DKt_N7nUJPQ"
+                target="_blank"><i class="fa fa-slack"></i></a>
             </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                <div class="rounded-social-buttons">
-                                    <a class="social-button github" href="https://github.com/ramanaditya/Microsoft-Student-Partners" target="_blank"><i class="fa fa-github"></i></a>
-                                    <a class="social-button twitter" href="https://twitter.com/mspsoc" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a class="social-button linkedin" href="https://www.linkedin.com/company/mspsoc/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                    <a class="social-button instagram" href="https://www.instagram.com/mspsoc/" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a class="social-button slack" href="https://join.slack.com/t/microsoftstud-eyh2026/shared_invite/zt-dw31rcph-mWc2a94nGm6DKt_N7nUJPQ" target="_blank"><i class="fa fa-slack"></i></a>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    <!-- footer_end -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 2em;"></div>
+  <div class="copy-right_text">
+    <div class="container">
+      <div class="footer_border"></div>
+      <div class="row">
+        <div class="col-xl-12">
+          <p class="copy_right text-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>
+              document.write(new Date().getFullYear());
+
+            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>
+            by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer_end -->

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>MSPSoC</title>
+  <title>MSPSoC-Social</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
@@ -56,12 +56,118 @@
 
 <body>
   <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-  {% include 'mspsoc/header.html' %}
 
-  {% block content %}
-  {% endblock content %}
+  <!-- header-start -->
+  {% include 'mspsoc/header.html' %}
+  <!-- header-end -->
+
+  <!-- slider_area_start -->
+  <div class="slider_area slider_bg_1">
+    <div class="slider_text">
+      {#            <div class="container">#}
+      {#                <div class="position_relv">#}
+      {#                    <div class="row col-xl-8 title_text title_text2">#}
+      {#                        <h3 class="">Projects</h3>#}
+      {#                        <div class="col-xl-8">#}
+      {#                            <div class="title_text title_text2 ">#}
+      {#                                <h3>Projects</h3>#}
+      {#                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>#}
+      {#                            </div>#}
+      {#                        </div>#}
+      {#                    </div>#}
+      {#                </div>#}
+      {#            </div>#}
+    </div>
+    {#        <div class="countDOwn_area">#}
+    {#            <div class="container">#}
+    {#                <div class="row align-items-center">#}
+    {#                    <div class="col-xl-4 col-md-6 col-lg-4">#}
+    {#                        <div class="single_date">#}
+    {#                            <i class="ti-location-pin"></i>#}
+    {#                            <span>City Hall, New York City</span>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="col-xl-3 col-md-6 col-lg-3">#}
+    {#                        <div class="single_date">#}
+    {#                            <i class="ti-alarm-clock"></i>#}
+    {#                            <span>12-15 Sep 2019</span>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="col-xl-5 col-md-12 col-lg-5">#}
+    {#                        <span id="clock"></span>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+  </div>
+  <!-- slider_area_end -->
+
+
+  <!--================Blog Area =================-->
+  <!-- Organizers Start -->
+  <div class="speakers_area" id="projects">
+    <h1 class="horizontal_text d-none d-lg-block">
+      Social Media
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="serction_title_large mb-95">
+            <h3>
+              Social Media
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Define Hash Tags -->
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <blockquote class="generic-blockquote" style="padding-bottom: -5em;border-left: 0.5em solid #55adee;">
+
+          <div class="row" style="margin-bottom: -2em;">
+            <div class="col-sm-12 single_speaker">
+              <i class="fa fa-hashtag" style="display: block;color: #55adee;font-size: 5em;margin-top: 0em;"></i>
+              <p style="font-size: 2.6em;text-align: center">Break the Internet</p>
+              <p>Share, Tweet and Retweet with the given hashtags to get your name mentioned on the Social Media wall.
+                We mention all the contributions.
+              </p>
+              <p style="text-align: center;font-size: 2em;font-weight: bold;word-spacing: 0.5em;">#mspsoc
+                #60daysofmspsoc #codewithmspsoc
+              </p>
+              <i class="fa fa-twitter"
+                style="display: block;text-align: right;color: #55adee;font-size: 6em;margin-bottom: 0em;"></i>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- -->
+
+    <!--Twitter Area -->
+    <div class="row" style="margin-top: 1em;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          {% for tweets in context.twitter %}
+          <div class="col-sm-2 single_speaker" align="center" style="margin-top: 0em;">
+            <a target="_blank" href="https://twitter.com/{{ tweets.username }}"> <img src="{{ tweets.image }}" alt="" class="twitter_profile"
+                ></a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!--Twitter Area Closed-->
+  </div>
+  <!--================Blog Area =================-->
 
   {% include 'mspsoc/footer.html' %}
   <!-- JS here -->
