@@ -89,12 +89,17 @@ class Social(View):
         tweets_hashtags_info = []
         tweets_df = pd.DataFrame()
         CSV_FILE = str(THIS_DIR) + "tweets.csv"
-
-        if os.path.isfile(CSV_FILE):
-            tweets_df = pd.read_csv(CSV_FILE)
-
-        elif tweets_df.empty or datetime.datetime.now().hour % 2 == 0:
-            hashtags = ("#mspsoc", "#60daysofmspsoc", "#codewithmspsoc")
+        fetched_info = []
+        try:
+            if os.path.isfile(str(CSV_FILE)):
+                try:
+                    tweets_df = pd.read_csv(CSV_FILE)
+                except:
+                    tweets_df = pd.DataFrame()
+        except FileNotFoundError:
+            pass
+        if not tweets_df.empty or datetime.datetime.now().hour % 2 == 0:
+            hashtags = "mspsoc"
             date = "2020-05-05"
             fetched_info = twitter.search_hashtags(hashtags, date)
             with open(str(THIS_DIR) + "tweets.csv", "w") as csv_file:
@@ -105,15 +110,20 @@ class Social(View):
                         row.append(val)
                     csv_writer.writerow(row)
             csv_file.close()
-        tweets_df = pd.read_csv(CSV_FILE)
-        for index, row in tweets_df.iterrows():
-            temp = dict()
-            temp["username"] = row[0]
-            temp["name"] = row[1]
-            temp["background_color"] = row[2]
-            temp["image"] = row[3]
-            temp["tweet"] = row[4]
-            twitter_list.append(temp)
+        if not tweets_df.empty or fetched_info:
+            print("NO ERROR")
+            tweets_df = pd.read_csv(CSV_FILE, delimiter=",")
+            print("READ")
+            if not tweets_df.empty:
+                print("EMPTY")
+                for index, row in tweets_df.iterrows():
+                    temp = dict()
+                    temp["username"] = row[0]
+                    temp["name"] = row[1]
+                    temp["background_color"] = row[2]
+                    temp["image"] = row[3]
+                    temp["tweet"] = row[4]
+                    twitter_list.append(temp)
 
         context["twitter"] = twitter_list
         return render(request, self.template_name, {"context": context})
