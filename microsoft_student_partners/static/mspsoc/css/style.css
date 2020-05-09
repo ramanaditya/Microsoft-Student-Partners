@@ -59,6 +59,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden !important;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
