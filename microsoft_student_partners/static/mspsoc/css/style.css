@@ -14,30 +14,72 @@
 }
 
 /* line 12, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
-.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover {
+.speakers_area
+  .single_speaker
+  .speaker_thumb
+  .hover_overlay
+  .social_icon
+  a:hover {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
   background: #ff9600;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
+  background: -moz-linear-gradient(
+    top,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
+  background: linear-gradient(
+    to bottom,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9600', endColorstr='#1bb8f9',GradientType=0 );
   /* IE6-9 */
 }
 
 /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
-.event_area .double_line::before, .event_area .double_line::after {
+.event_area .double_line::before,
+.event_area .double_line::after {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
   background: #ff9600;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
+  background: -moz-linear-gradient(
+    left,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
+  background: linear-gradient(
+    to right,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9600', endColorstr='#1bb8f9',GradientType=1 );
   /* IE6-9 */
@@ -59,6 +101,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
@@ -81,7 +124,8 @@ a,
 
 /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 a:focus,
-.button:focus, button:focus {
+.button:focus,
+button:focus {
   text-decoration: none;
   outline: none;
 }
@@ -109,7 +153,11 @@ button {
 }
 
 /* line 44, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Poppins", sans-serif;
   color: #131313;
 }
@@ -422,17 +470,17 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #0181F5;
+  border: 1px solid #0181f5;
   text-align: center;
-  color: #0181F5 !important;
+  color: #0181f5 !important;
   text-transform: uppercase;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #0181F5;
+  background: #0181f5;
   color: #fff !important;
-  border: 1px solid #0181F5;
+  border: 1px solid #0181f5;
 }
 
 /* line 20, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
@@ -448,24 +496,24 @@ h3 {
 /* line 27, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-red {
   background: #fff;
-  color: #FF0000;
+  color: #ff0000;
   display: inline-block;
   padding: 16px 44px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   border: 0;
-  border: 2px solid #FF0000;
+  border: 2px solid #ff0000;
   text-align: center;
-  color: #FF0000 !important;
+  color: #ff0000 !important;
   text-transform: capitalize;
 }
 
 /* line 41, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-red:hover {
-  background: #FF0000;
+  background: #ff0000;
   color: #fff !important;
-  border: 2px solid #FF0000;
+  border: 2px solid #ff0000;
 }
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
@@ -636,7 +684,7 @@ h3 {
 .serction_title_large h3 {
   font-size: 80px;
   font-weight: 700;
-  color: #1F1F1F;
+  color: #1f1f1f;
   display: inline-block;
   position: relative;
 }
@@ -714,12 +762,12 @@ h3 {
 /* line 28, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #0181F5;
+  color: #0181f5;
 }
 
 /* line 32, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #0181F5;
+  color: #0181f5;
 }
 
 @media (max-width: 767px) {
@@ -924,12 +972,12 @@ h3 {
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #0181F5;
+  color: #0181f5;
 }
 
 /* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-  color: #0181F5;
+  color: #0181f5;
 }
 
 /* line 99, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1068,7 +1116,7 @@ h3 {
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area {
   background-size: cover;
-  background-position: center  center;
+  background-position: center center;
   background-repeat: no-repeat;
   padding-top: 300px;
   padding-bottom: 100px;
@@ -1716,7 +1764,7 @@ h3 {
   position: absolute;
   right: 0;
   top: 100px;
-  color: #F3F3F3;
+  color: #f3f3f3;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1790,12 +1838,17 @@ h3 {
   display: inline-block;
   line-height: 50px;
   font-size: 17px;
-  color: #FF0000;
+  color: #ff0000;
   margin: 0 7px;
 }
 
 /* line 70, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover {
+.speakers_area
+  .single_speaker
+  .speaker_thumb
+  .hover_overlay
+  .social_icon
+  a:hover {
   color: #fff;
 }
 
@@ -1811,7 +1864,7 @@ h3 {
 .speakers_area .single_speaker .speaker_name p {
   margin-bottom: 0;
   font-size: 16px;
-  color: #FF0000;
+  color: #ff0000;
   font-weight: 400;
 }
 
@@ -1841,7 +1894,7 @@ h3 {
 .resister_book {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center  center;
+  background-position: center center;
   padding: 184px 0;
 }
 
@@ -1967,7 +2020,7 @@ h3 {
 .faq_area #accordion .card h5 button {
   font-size: 22px;
   font-weight: 400;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 
 @media (max-width: 767px) {
@@ -2017,12 +2070,12 @@ h3 {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   background: #fff !important;
-  border: 1px solid #E9E5EC;
+  border: 1px solid #e9e5ec;
   border: 5px;
   margin-bottom: 30px;
-  border: 1px solid #E9E5EC;
+  border: 1px solid #e9e5ec;
 }
 
 @media (max-width: 767px) {
@@ -2048,7 +2101,8 @@ h3 {
 }
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
-.faq_area .btn-link.focus, .faq_area .btn-link:focus {
+.faq_area .btn-link.focus,
+.faq_area .btn-link:focus {
   text-decoration: none;
   border-color: transparent;
   box-shadow: none;
@@ -2098,7 +2152,7 @@ h3 {
 .event_area .vr_text {
   font-size: 120px;
   font-weight: 700;
-  color: #F3F3F3;
+  color: #f3f3f3;
   writing-mode: vertical-lr;
   position: absolute;
   left: 17%;
@@ -2157,7 +2211,7 @@ h3 {
 .event_area .date h3 {
   font-size: 26px;
   font-weight: 500;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 @media (max-width: 767px) {
@@ -2220,7 +2274,7 @@ h3 {
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
 .event_area .single_speaker .speaker-name .heading span {
   font-size: 26px;
-  color: #1F1F1F;
+  color: #1f1f1f;
   font-weight: 500;
 }
 
@@ -2228,7 +2282,7 @@ h3 {
 .event_area .single_speaker .speaker-name .heading .time {
   font-size: 16px;
   font-weight: 500;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 
 /* line 104, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
@@ -2330,7 +2384,7 @@ h3 {
 /* line 55, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget p.footer_text {
   font-size: 16px;
-  color: #B2B2B2;
+  color: #b2b2b2;
   margin-bottom: 23px;
   font-weight: 400;
   line-height: 28px;
@@ -2338,7 +2392,7 @@ h3 {
 
 /* line 61, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget p.footer_text a.domain {
-  color: #B2B2B2;
+  color: #b2b2b2;
   font-weight: 400;
 }
 
@@ -2351,7 +2405,7 @@ h3 {
 /* line 70, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget p.footer_text.doanar a {
   font-weight: 500;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 /* line 74, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
@@ -2374,7 +2428,7 @@ h3 {
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget ul li a:hover {
-  color: #0181F5;
+  color: #0181f5;
 }
 
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
@@ -2472,13 +2526,13 @@ h3 {
 /* line 161, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer .socail_links ul li a {
   font-size: 18px;
-  color: #C3B2F0;
+  color: #c3b2f0;
   line-height: 42px;
   width: 50px;
   height: 50px;
   display: inline-block;
   text-align: center;
-  background: #8565E2;
+  background: #8565e2;
   border-radius: 3px;
   line-height: 50px !important;
   margin-right: 7px;
@@ -2581,7 +2635,7 @@ h3 {
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* line 42, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
@@ -2604,13 +2658,13 @@ h3 {
 /* line 55, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
 .team_area .single_team .thumb::before {
   position: absolute;
-  content: '';
+  content: "";
   background: #000;
   width: 100%;
   height: 100%;
   left: 0;
   border-radius: 50%;
-  opacity: .5;
+  opacity: 0.5;
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
   -ms-transform: translateY(100px);
@@ -2652,7 +2706,7 @@ h3 {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
@@ -2691,7 +2745,8 @@ h3 {
 }
 
 /* line 16, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_contact.scss */
-.contact-info__icon i, .contact-info__icon span {
+.contact-info__icon i,
+.contact-info__icon span {
   color: #8f9195;
   font-size: 27px;
 }
@@ -2938,7 +2993,7 @@ h6 {
   outline: none;
   line-height: 40px;
   padding: 0 30px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -3222,7 +3277,6 @@ h6 {
   text-align: right;
   display: block;
 }
-
 
 /* line 353, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .progress-table-wrap {
@@ -3784,7 +3838,8 @@ h6 {
 
 /* line 798, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3826,7 +3881,8 @@ h6 {
 
 /* line 835, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
+  background: url(../img/elements/success-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3874,7 +3930,8 @@ h6 {
 
 /* line 876, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3916,7 +3973,8 @@ h6 {
 
 /* line 913, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3958,7 +4016,8 @@ h6 {
 
 /* line 950, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/success-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -4006,7 +4065,8 @@ h6 {
 
 /* line 991, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -4176,8 +4236,9 @@ h6 {
 }
 
 /* line 14, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #0181F5 0%, #0181F5 99%);
+.blog_area a:hover,
+.blog_area a :hover {
+  background: -webkit-linear-gradient(131deg, #0181f5 0%, #0181f5 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -4204,7 +4265,7 @@ h6 {
 
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-blog .thumb:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -4251,7 +4312,7 @@ h6 {
 
 /* line 84, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-blog .tag:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 10px;
@@ -4310,7 +4371,7 @@ h6 {
 
 /* line 135, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-blog:hover .thumb:after {
-  opacity: .7;
+  opacity: 0.7;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -4688,7 +4749,7 @@ h6 {
 
 /* line 544, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .blog_details a:hover {
-  color: #0181F5;
+  color: #0181f5;
 }
 
 /* line 549, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
@@ -4984,7 +5045,7 @@ h6 {
 
 /* line 842, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #0181F5;
+  background: #0181f5;
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
@@ -5232,7 +5293,7 @@ h6 {
 
 /* line 1208, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-post-area .blog-author a:hover {
-  color: #0181F5;
+  color: #0181f5;
 }
 
 /* line 1213, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
@@ -5296,7 +5357,7 @@ h6 {
 
 /* line 1264, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-post-area .navigation-area .nav-left:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -5338,7 +5399,7 @@ h6 {
 
 /* line 1299, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-post-area .navigation-area .nav-right:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 991px) {
@@ -5661,7 +5722,7 @@ h6 {
 
 /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card .card-body a {
-  color: #0181F5;
+  color: #0181f5;
   text-transform: uppercase;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -5688,7 +5749,7 @@ h6 {
   height: 10px;
   top: 5px;
   left: 0;
-  background-color: #0181F5;
+  background-color: #0181f5;
   border-radius: 50%;
 }
 
@@ -5825,7 +5886,7 @@ h6 {
 }
 
 .svg-inline--fa {
-  vertical-align: -0.200em;
+  vertical-align: -0.2em;
 }
 
 .rounded-social-buttons {
@@ -5852,13 +5913,18 @@ h6 {
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
   -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
-.rounded-social-buttons .fa-twitter, .fa-github, .fa-linkedin, .fa-slack, .fa-instagram {
+.rounded-social-buttons .fa-twitter,
+.fa-github,
+.fa-linkedin,
+.fa-slack,
+.fa-instagram {
   font-size: 25px;
 }
 
@@ -5866,7 +5932,8 @@ h6 {
   background: #181919;
 }
 
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+.rounded-social-buttons .social-button.github:hover,
+.rounded-social-buttons .social-button.github:focus {
   color: #181919;
   background: #fefefe;
   border-color: #181919;
@@ -5876,7 +5943,8 @@ h6 {
   background: #55acee;
 }
 
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+.rounded-social-buttons .social-button.twitter:hover,
+.rounded-social-buttons .social-button.twitter:focus {
   color: #55acee;
   background: #fefefe;
   border-color: #55acee;
@@ -5886,28 +5954,31 @@ h6 {
   background: #007bb5;
 }
 
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
   color: #007bb5;
   background: #fefefe;
   border-color: #007bb5;
 }
 
 .rounded-social-buttons .social-button.slack {
-  background: #4A154B;
+  background: #4a154b;
 }
 
-.rounded-social-buttons .social-button.slack:hover, .rounded-social-buttons .social-button.slack:focus {
-  color: #4A154B;
+.rounded-social-buttons .social-button.slack:hover,
+.rounded-social-buttons .social-button.slack:focus {
+  color: #4a154b;
   background: #fefefe;
-  border-color: #4A154B;
+  border-color: #4a154b;
 }
 
 .rounded-social-buttons .social-button.instagram {
-  background: #FF5733;
+  background: #ff5733;
 }
 
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #FF5733;
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #ff5733;
   background: #fefefe;
-  border-color: #FF5733;
+  border-color: #ff5733;
 }
