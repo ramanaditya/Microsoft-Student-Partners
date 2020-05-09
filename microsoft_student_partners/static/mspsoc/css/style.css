@@ -6100,3 +6100,15 @@ h6 {
 		flex-wrap: wrap;
 	}
 }
+
+.twitter_profile{
+  border-radius: 50%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .twitter_profile{
+    border-radius: 50%;
+    width: 70% !important;
+  }
+}

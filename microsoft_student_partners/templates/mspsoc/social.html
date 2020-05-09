@@ -157,8 +157,8 @@
         <div class="row">
           {% for tweets in context.twitter %}
           <div class="col-sm-2 single_speaker" align="center" style="margin-top: 0em;">
-            <a target="_blank" href="https://twitter.com/{{ tweets.username }}"> <img src="{{ tweets.image }}" alt=""
-                style="border-radius: 50%;width: 100%"></a>
+            <a target="_blank" href="https://twitter.com/{{ tweets.username }}"> <img src="{{ tweets.image }}" alt="" class="twitter_profile"
+                ></a>
           </div>
           {% endfor %}
         </div>
