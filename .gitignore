@@ -337,4 +337,5 @@ microsoft_student_partners/media/
 
 .pytest_cache/
 
-
+### Databses
+db.sqlite3
